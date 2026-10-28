@@ -4,10 +4,6 @@ run-name: EKO previews · ${{ github.ref_name }}
 on:
   push:
     branches: [feature/brand-001-first-branded-storefront]
-    paths:
-      - public/explorations/**
-      - tests/browser/explorations.spec.js
-      - .github/workflows/eko-previews.yml
   workflow_dispatch:
 
 permissions:
