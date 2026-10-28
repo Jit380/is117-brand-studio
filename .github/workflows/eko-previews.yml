@@ -44,3 +44,24 @@ jobs:
       - name: Publish the EKO preview pages
         id: deployment
         uses: actions/deploy-pages@v5
+      - name: Verify both published previews
+        env:
+          PAGES_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          python3 - <<'PY'
+          import os, time, urllib.request
+          base = os.environ["PAGES_URL"].rstrip("/")
+          for name in ("modernist", "postmodern"):
+              url = f"{base}/explorations/{name}.html"
+              for attempt in range(6):
+                  try:
+                      with urllib.request.urlopen(url, timeout=20) as response:
+                          html = response.read().decode()
+                      assert "A simple shirt." in html and 'id="eko-form"' in html
+                      print(f"Verified HTTP 200 and EKO content: {url}")
+                      break
+                  except Exception:
+                      if attempt == 5:
+                          raise
+                      time.sleep(5)
+          PY
