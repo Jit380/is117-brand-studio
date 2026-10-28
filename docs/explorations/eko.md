@@ -36,4 +36,8 @@ No learner preference between the two actual renders or learner browser observat
 
 ## Publication
 
-The `Publish EKO previews` workflow attempts a checked Pages deployment from the existing feature branch, publishing the full `public/` folder so the original baseline stays at the root and both previews remain under `/explorations/`. Pages enablement or deployment restrictions may require repository settings access. Only a successful deployment and verified response establish that a live link works.
+The first `Publish EKO previews` run passed its checks but failed at Pages configuration: the site does not exist and GitHub's integration cannot enable it (`Resource not accessible by integration`). No live deployment is claimed.
+
+The corrected workflow always saves a downloadable artifact and explicitly skips live publication until Pages is configured for GitHub Actions. Once enabled in repository settings, rerun the workflow on the feature branch. It publishes the full `public/` folder so the original baseline stays at the root and both previews remain under `/explorations/`, then verifies both published URLs. Only a successful deployment and those checks establish that a live link works.
+
+The complete, self-contained website bundle is `public/explorations/EKO-previews.zip`. Unzip it and open `EKO/index.html`; each direction includes its fonts, image, styles and working bag. The standalone content and interaction were also checked through a local HTTP server with external requests blocked. Browser policy prevents direct `file://` inspection in this cloud machine, so no local-file browser check is claimed.
