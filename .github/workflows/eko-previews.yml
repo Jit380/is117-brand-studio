@@ -1,4 +1,5 @@
 name: Publish EKO previews
+run-name: EKO previews · ${{ github.ref_name }}
 
 on:
   push:
