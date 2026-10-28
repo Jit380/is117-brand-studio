@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="EKO. A simple shirt that stands for the strength you carry. Explore an everyday expression of quiet resilience."
+    />
+    <title>EKO — 01 — The quiet structure</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="eko.css" />
+    <link
+      rel="preload"
+      href="assets/plex.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <script src="eko.js" defer></script>
+  </head>
+  <body class="modernist">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="topbar frame">
+      <a class="logo" href="index.html" aria-label="EKO preview home"
+        >EKO<sup>01</sup></a
+      >
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#main">The beginning</a><a href="#meaning">The meaning</a
+        ><a href="#shirt">The shirt</a>
+      </nav>
+      <a class="bag-link" href="#bag">Demo bag <span id="eko-count">0</span></a>
+    </header>
+    <main id="main">
+      <section class="hero frame" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">EKO / The everyday white shirt</p>
+          <h1 id="hero-title" class="hero-title">
+            A simple shirt.<br /><em>For all you carry.</em>
+          </h1>
+          <p class="hero-support">Quiet strength. Worn every day.</p>
+          <a class="pill" href="#shirt"
+            >Discover the shirt
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M5 12h14m-6-6 6 6-6 6"
+                stroke="currentColor"
+                stroke-width="1.5"
+              /></svg
+          ></a>
+        </div>
+        <figure class="hero-art">
+          <span class="art-word" aria-hidden="true">EKO</span>
+          <img
+            src="assets/white-shirt.png"
+            alt="Front view of a plain white short-sleeved crew-neck T-shirt"
+            width="1254"
+            height="1254"
+            fetchpriority="high"
+          />
+          <figcaption>
+            <span>01 / White.<br />Room for everything within.</span
+            ><span>A quieter kind<br />of statement.</span>
+          </figcaption>
+        </figure>
+        <div class="hero-foot">
+          <span class="micro">Less on the surface. More underneath.</span
+          ><a href="#story">Find the meaning ↓</a>
+        </div>
+      </section>
+      <section id="story" class="story" aria-labelledby="story-title">
+        <div class="frame">
+          <div class="story-top">
+            <p class="micro">01 / The human part</p>
+            <span class="micro">EKO Journal</span>
+          </div>
+          <div class="story-grid">
+            <h2 id="story-title" class="story-title">
+              Not everything<br />we carry<br /><span class="story-emphasis"
+                >can be seen.</span
+              >
+            </h2>
+            <div class="story-copy">
+              <p>
+                The early mornings. The days that ask a little more. The quiet
+                effort of finding your way.
+              </p>
+              <p>
+                There is strength in continuing. In making room for hope. In
+                being human, even when the world makes it difficult.
+              </p>
+              <p class="signature">
+                You don’t have to wear it all on the outside.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="meaning"
+        class="meaning frame"
+        aria-labelledby="meaning-title"
+      >
+        <div
+          class="meaning-art"
+          role="img"
+          aria-label="A white sphere with a fine orbit, an abstract study of light and connection"
+        >
+          <div class="light-disc"></div>
+          <span class="micro">A study in light / 001</span>
+        </div>
+        <div class="meaning-copy">
+          <p class="eyebrow">02 / Why white</p>
+          <h2 id="meaning-title" class="meaning-title">
+            Everything.<br />In its simplest form.
+          </h2>
+          <p>
+            In light, colors can come together to form white. For EKO, that
+            becomes a thought about us: different lives, a shared human spirit.
+          </p>
+          <p>
+            White is our symbol of purity. A little less ego. A little more room
+            for what connects us.
+          </p>
+          <p class="aside">
+            A simple shirt that stands for the strength you carry.
+          </p>
+        </div>
+      </section>
+      <section id="shirt" class="product frame" aria-labelledby="shirt-title">
+        <div class="product-photo">
+          <img
+            src="assets/white-shirt.png"
+            alt="The same unbranded white T-shirt, shown from the front"
+            width="1254"
+            height="1254"
+            loading="lazy"
+          />
+        </div>
+        <div class="product-information">
+          <p class="eyebrow">03 / An everyday expression</p>
+          <h2 id="shirt-title" class="product-title">The white shirt.</h2>
+          <p class="product-description">
+            A familiar silhouette. A meaning of your own. For ordinary days, and
+            everything they hold.
+          </p>
+          <div class="product-line"><span>Color</span><span>White</span></div>
+          <form id="eko-form" novalidate>
+            <fieldset aria-describedby="eko-error">
+              <legend>Choose your demo size</legend>
+              <div class="sizes">
+                <label class="size"
+                  ><input type="radio" name="size" value="S" /><span
+                    >S</span
+                  ></label
+                ><label class="size"
+                  ><input type="radio" name="size" value="M" /><span
+                    >M</span
+                  ></label
+                ><label class="size"
+                  ><input type="radio" name="size" value="L" /><span
+                    >L</span
+                  ></label
+                ><label class="size"
+                  ><input type="radio" name="size" value="XL" /><span
+                    >XL</span
+                  ></label
+                >
+              </div>
+              <p id="eko-error" class="error" role="alert" hidden>
+                Choose a size before adding the shirt to your demo bag.
+              </p>
+            </fieldset>
+            <button class="pill add-button" type="submit">
+              Add to demo bag
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M5 12h14m-6-6 6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </button>
+          </form>
+          <div id="bag" class="bag-status">
+            <p
+              id="eko-status"
+              class="status"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              Your demo bag is empty.
+            </p>
+            <button id="eko-clear" class="clear-bag" type="button" disabled>
+              Empty demo bag
+            </button>
+          </div>
+          <p class="notice">
+            A product concept. Image is an AI-generated visualization. Demo
+            sizes only; no orders or payments. Your bag resets on refresh.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer frame">
+      <a class="logo" href="#main" aria-label="EKO back to top">EKO</a>
+      <p class="footer-tagline">Quiet strength. Worn every day.</p>
+      <nav class="direction-switch" aria-label="Compare visual directions">
+        <a href="modernist.html" aria-current="page">01 / Modernist</a>
+        <a href="postmodern.html">02 / Postmodern</a>
+      </nav>
+    </footer>
+    <details class="source-notes frame">
+      <summary>Design study / references &amp; credits</summary>
+      <p>
+        An interpretation of modernist functional hierarchy: a stable asymmetric
+        grid, repeated rules and IBM Plex Sans. The measured letterforms and
+        useful range of the type family keep a common object and its message
+        legible. Intended effect: quiet confidence for everyday wear. Risk: the
+        order could feel impersonal. Reference:
+        <a href="https://github.com/IBM/plex"
+          >IBM &amp; Bold Monday, IBM Plex (2017)</a
+        >. Fonts used under the SIL Open Font License.
+      </p>
+      <p>
+        Both studies use the same product image, headline, supporting copy,
+        story and action. EKO is a learner-selected name; this typography is a
+        provisional wordmark. The prose is an AI-drafted interpretation of the
+        learner’s stated meaning. The Apple reference is the learner’s
+        inspiration; the current Apple website could not be inspected in this
+        environment. No music, lyrics, product endorsements or unsupported
+        garment claims are used.
+      </p>
+      <p>
+        <a href="assets/plex-license.txt">IBM Plex license</a> ·
+        <a href="assets/syne-license.txt">Syne license</a> ·
+        <a href="../index.html">Neutral starter</a>
+      </p>
+    </details>
+  </body>
+</html>

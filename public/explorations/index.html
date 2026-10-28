@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EKO — Two ways to feel it</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="eko.css" />
+    <style>
+      .gallery {
+        min-height: 100vh;
+        padding-block: 50px;
+      }
+      .gallery header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .gallery h1 {
+        font-family: Syne, sans-serif;
+        font-weight: 500;
+        font-size: clamp(40px, 6vw, 80px);
+        letter-spacing: -0.06em;
+        line-height: 1.06;
+        margin-block: 80px 24px;
+      }
+      .gallery > p {
+        color: #62635b;
+        max-width: 430px;
+        font-size: 16px;
+        line-height: 1.8;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-block: 50px;
+      }
+      .card {
+        border-top: 1px solid #c7c7be;
+        padding-top: 18px;
+      }
+      .card img {
+        width: 100%;
+        aspect-ratio: 1.35;
+        object-fit: cover;
+        object-position: top;
+        margin-block: 20px;
+        background: #e6e5e0;
+        transition: transform 220ms;
+      }
+      .card:hover img {
+        transform: translateY(-4px);
+      }
+      .card h2 {
+        font-size: 25px;
+        font-weight: 450;
+        letter-spacing: -0.04em;
+      }
+      .card p {
+        margin-top: 10px;
+        font-size: 13px;
+        color: #62635b;
+      }
+      .gallery > footer {
+        padding-top: 30px;
+        border-top: 1px solid #c7c7be;
+        font-size: 12px;
+        color: #62635b;
+      }
+      @media (width <= 600px) {
+        .cards {
+          grid-template-columns: 1fr;
+          gap: 45px;
+        }
+        .gallery h1 {
+          margin-top: 55px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="gallery frame">
+      <header>
+        <span class="logo">EKO</span
+        ><span class="micro">Two directions / One meaning</span>
+      </header>
+      <h1>Two ways<br />to feel it.</h1>
+      <p>
+        The same white shirt. The same quiet strength.<br />Explore the two
+        worlds below.
+      </p>
+      <div class="cards">
+        <a class="card" href="modernist.html"
+          ><span class="micro">01 / Modernist</span
+          ><img
+            src="assets/modernist-desktop.png"
+            alt="Modernist preview: an editorial grid with the shirt beside a large headline"
+            width="1440"
+            height="1000"
+          />
+          <h2>The quiet structure ↗</h2>
+          <p>Measured. Grounded. Room to breathe.</p></a
+        ><a class="card" href="postmodern.html"
+          ><span class="micro">02 / Postmodern</span
+          ><img
+            src="assets/postmodern-desktop.png"
+            alt="Postmodern preview: a centered product reveal with layered type"
+            width="1440"
+            height="1000"
+          />
+          <h2>The inner world ↗</h2>
+          <p>Product-focused. Expressive. A little unexpected.</p></a
+        >
+      </div>
+      <footer>
+        Design studies for EKO. Product concept only; no orders or payments.
+      </footer>
+    </main>
+  </body>
+</html>
