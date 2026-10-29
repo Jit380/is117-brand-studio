@@ -103,3 +103,9 @@ Validation before publication: formatting, HTML/CSS/JavaScript lint, seven serve
 Replaces the abstract sphere in `#meaning` with an overhead white lotus in pond water and green lily pads. The photograph fills the whole section; copy overlays a dark gradient. A dedicated portrait image keeps the lotus above the text on narrow screens. Both images are AI-generated botanical mood studies. The shirt and demo bag are unchanged, and the guide documents the matching imagery and layout.
 
 Files: `public/index.html`, `public/eko-editorial.css`, `public/styleguide.html`, `public/assets/eko-lotus.png`, `public/assets/eko-lotus-mobile.png`. The existing deployment verification additionally loads the mobile lotus asset and checks the section fills the viewport width.
+
+### Lotus scale and continuous thread
+
+The lotus and chapter height are reduced; desktop copy sits immediately beside the flower. On phones the smaller flower and headline share a row, followed by body text. One decorative SVG thread now follows the full storefront through the opening, close-up, lotus, product and footer. It uses the guide’s shared thread-color token, ignores pointer events, and has no animation. Its route adjusts to responsive wrapping, motion controls and bag-related height changes.
+
+`public/eko-thread.js` supplies the continuous route; `tests/browser/thread.spec.js` verifies that it still passes through the lotus and ends in the footer after motion and viewport changes, while the bag remains usable. Formatting, lint, 7 server tests and all 14 browser tests passed with system Chromium. GitHub Actions additionally checks the deployed thread after mobile resizing. Human observations remain separate from these checks.

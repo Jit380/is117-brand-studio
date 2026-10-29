@@ -98,6 +98,17 @@ jobs:
                 assert.equal(section.x, 0);
                 assert.equal(section.width, 390);
                 console.log('Verified full-width lotus section and mobile image.');
+                await page.waitForFunction(() => {
+                  const svg = document.querySelector('.journey-thread');
+                  const path = svg?.querySelector('path');
+                  if (!path?.getAttribute('d')) return false;
+                  const bounds = svg.getBoundingClientRect();
+                  const end = path.getPointAtLength(path.getTotalLength());
+                  const y = bounds.top + end.y * bounds.height / svg.viewBox.baseVal.height;
+                  const footer = document.querySelector('.footer').getBoundingClientRect();
+                  return y >= footer.top && y <= footer.bottom;
+                });
+                console.log('Verified continuous purple thread reaches the footer on mobile.');
                 await page.setViewportSize({width: 1280, height: 720});
               }
               console.log(`Verified deployed page and all images: ${new URL(route, base)}`);
