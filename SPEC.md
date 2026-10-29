@@ -6,10 +6,10 @@ This is the durable agreement between the learner and agent. Keep it concise and
 
 ## Current stage
 
-- Stage: Baseline ready to try; brand decisions pending.
+- Stage: EKO reference-based storefront implemented; publication authorized.
 - Current feature: `BRAND-001` — first branded storefront and live style guide.
-- Status: Pending learner scope agreement.
-- Next small decision: Confirm the first slice after trying the neutral storefront.
+- Status: Release prepared on `feature/brand-001-first-branded-storefront`; deployment verification runs in GitHub Actions.
+- Next small decision: Review the deployed EKO storefront; missing learner reasoning and human observations remain pending.
 
 ## Product boundary
 
@@ -89,3 +89,11 @@ Write a short result and link only evidence that exists. A passing browser check
 ## Later
 
 No follow-up is selected. After keeping `BRAND-001`, choose one next cycle: perhaps a brand story, a supported fit guide, or richer demo-bag behavior. Agree its scope and add one new spec ID at that time.
+
+## EKO storefront release
+
+The release presents a centered entirely white shirt, sculptural white fabric on charcoal, and an original conceptual ivory/lavender quilt illustration. Large serif typography and a fine decorative lavender thread connect the three chapters; narrow screens stack them. Product concept imagery is AI-generated, not evidence of product construction or an archival quilt. The existing size selector and temporary demo bag are preserved. The live guide shares the CSS and assets.
+
+Changed files include `public/index.html`, `public/styleguide.html`, shared `public/eko-*.css` and JavaScript, and `public/assets/eko-*.png` / `eko-wordmark.svg`. Existing exploration pages, their source notes and tests are preserved. No unreviewed LEARNING.md excerpts, local screenshots, scripts, caches or dependencies are part of this release.
+
+Validation before publication: formatting, HTML/CSS/JavaScript lint, seven server tests, and the full browser suite using system Chromium. The GitHub workflow uses its standard Playwright Chromium installation and additionally verifies the deployed root, three new image assets, shared style guide and demo-bag operations. Human impressions, audience reasoning and other learning criteria are not inferred from these checks. Publication is separate from completion of all BRAND-001 learning evidence.

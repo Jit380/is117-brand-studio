@@ -59,6 +59,44 @@ jobs:
         if: steps.pages.outputs.enabled == 'true'
         id: deployment
         uses: actions/deploy-pages@v5
+      - name: Verify published storefront, style guide and demo bag
+        if: steps.pages.outputs.enabled == 'true'
+        env:
+          PAGES_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          node --input-type=module <<'JS'
+          import assert from 'node:assert/strict';
+          import { chromium } from 'playwright';
+          const base = process.env.PAGES_URL.replace(/\/$/, '') + '/';
+          const browser = await chromium.launch();
+          try {
+            const page = await browser.newPage();
+            for (const route of ['', 'styleguide.html']) {
+              const response = await page.goto(new URL(route, base).href);
+              assert.equal(response.status(), 200);
+              await page.locator('img').evaluateAll(images => images.forEach(image => image.loading = 'eager'));
+              await page.locator('img').evaluateAll(images => Promise.all(images.map(image => image.decode())));
+              if (!route) {
+                assert.match(await page.locator('h1').textContent(), /A simple shirt/);
+                for (const name of ['eko-shirt-editorial.png', 'eko-knot.png', 'eko-quilt.png']) {
+                  assert.ok(await page.locator(`img[src="assets/${name}"]`).count());
+                }
+                await page.getByRole('button', {name: 'Add to demo bag', exact: true}).click();
+                assert.equal(await page.locator('#bag-count').textContent(), '0');
+                assert.equal(await page.locator('#size-error').isVisible(), true);
+                await page.locator('input[name="size"][value="M"]').check();
+                await page.getByRole('button', {name: 'Add to demo bag', exact: true}).click();
+                assert.equal(await page.locator('#bag-count').textContent(), '1');
+                await page.getByRole('button', {name: 'Empty demo bag', exact: true}).click();
+                assert.equal(await page.locator('#bag-count').textContent(), '0');
+              }
+              console.log(`Verified deployed page and all images: ${new URL(route, base)}`);
+            }
+            console.log('Verified live demo bag: missing size, add size M, empty bag.');
+          } finally {
+            await browser.close();
+          }
+          JS
       - name: Verify both published previews
         if: steps.pages.outputs.enabled == 'true'
         env:

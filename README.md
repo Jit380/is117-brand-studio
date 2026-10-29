@@ -1,8 +1,10 @@
 # IS117 Brand Studio
 
-**The same white T-shirt can carry very different meanings.** Develop a brand for it with an AI collaborator, then make those decisions visible in a professional website and a live style guide.
+**EKO — For all you carry.** A white-shirt concept with a three-part editorial opening, sculptural fabric imagery, expressive typography and a matching live style guide. The demo bag supports size selection, adding and emptying; it does not place orders or accept payments.
 
-This template starts with a working, deliberately neutral storefront. Your audience, name, promise, logo, voice, and visual direction are **not chosen yet**. You make the decisions; the agent helps you explore, build, check, and revise them.
+[Storefront](https://jit380.github.io/is117-brand-studio/) · [Live style guide](https://jit380.github.io/is117-brand-studio/styleguide.html)
+
+Publication uses the existing `feature/brand-001-first-branded-storefront` GitHub Pages workflow. It runs the prepared checks and verifies the deployed storefront, image assets, style guide and demo bag. Brand reasoning and human browser observations remain separate from automated checks.
 
 **A short record, visible to you:** your AI coach updates [LEARNING.md](LEARNING.md) with brief task-related explanations, observations and help received. It is AI-drafted, not a full transcript, and may be public with your repository. Review it and correct or remove excerpts before they are committed or pushed. Your instructor uses it alongside the project with this [simple three-part rubric](docs/assessment.md); the AI does not assign your grade.
 

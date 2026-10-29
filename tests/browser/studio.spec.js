@@ -73,6 +73,21 @@ for (const route of ["/", "/styleguide.html", "/studio.html"]) {
     });
     await page.goto(route);
     await expect(page.getByRole("main")).toBeVisible();
+    // Load images below the fold before asserting their decoded dimensions.
+    await page.locator("img").evaluateAll((images) => {
+      images.forEach((image) => {
+        image.loading = "eager";
+      });
+    });
+    await expect
+      .poll(() =>
+        page
+          .locator("img")
+          .evaluateAll((images) =>
+            images.every((image) => image.complete && image.naturalWidth > 0),
+          ),
+      )
+      .toBeTruthy();
     const brokenImages = await page
       .locator("img")
       .evaluateAll((images) =>

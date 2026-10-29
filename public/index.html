@@ -5,194 +5,313 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="An unfinished, neutral T-shirt storefront for the IS117 Brand Studio. Build a brand through deliberate, visible design choices."
+      content="EKO. A simple shirt that stands for the strength you carry. Explore an everyday expression of quiet resilience."
     />
-    <title>Your Brand — neutral storefront starter</title>
+    <title>EKO — For all you carry.</title>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="eko-shared.css" />
+    <link
+      rel="preload"
+      href="explorations/assets/syne.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
     <script src="shop.js" defer></script>
+
+    <link rel="stylesheet" href="eko-finish.css" />
+    <link rel="stylesheet" href="eko-editorial.css" />
+    <script src="eko-motion.js" defer></script>
   </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <aside class="starter-notice" aria-label="Starter information">
-      <span
-        ><strong>Unfinished by design.</strong> This is a neutral teaching
-        starter. Replace its identity after your brand decisions.</span
-      >
-      <a href="studio.html"
-        >Enter the studio <span aria-hidden="true">↗</span></a
-      >
-    </aside>
-    <header class="site-header wrap">
-      <a
-        class="brand-link"
-        href="index.html"
-        aria-label="Your Brand storefront home"
-        ><img
-          class="wordmark"
-          src="assets/wordmark.svg"
-          alt="Neutral starter wordmark"
-          width="175"
-          height="26"
-      /></a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a class="nav-link" href="index.html" aria-current="page">Shop</a>
-        <a class="nav-link" href="styleguide.html">Style guide</a>
-        <a class="nav-link" href="studio.html"
-          >Studio <span aria-hidden="true">↗</span></a
-        >
-      </nav>
-      <a class="bag-link" href="#demo-bag" aria-label="View demo bag"
-        >Demo bag <span id="bag-count" class="bag-count">0</span></a
-      >
-    </header>
+
+  <body class="postmodern eko-final">
+    <a class="skip" href="#main">Skip to content</a>
 
     <main id="main">
-      <section class="product-section wrap" aria-labelledby="product-title">
-        <div class="product-visual">
-          <div class="visual-label">
-            <span>001 / The starting point</span><span>Unbranded</span>
+      <div class="reference-panels">
+        <section class="reference-hero" aria-labelledby="hero-title">
+          <header class="topbar frame">
+            <a class="logo" href="index.html" aria-label="EKO storefront home">
+              <img
+                class="eko-mark"
+                src="assets/eko-wordmark.svg"
+                alt="EKO"
+                width="220"
+                height="75"
+              />
+            </a>
+
+            <nav class="nav" aria-label="Main navigation">
+              <a href="#meaning">The meaning</a>
+              <a href="#shirt">The shirt</a>
+            </nav>
+
+            <a class="bag-link" href="#demo-bag">
+              Bag <span id="bag-count">0</span>
+            </a>
+          </header>
+
+          <div class="reference-hero-copy">
+            <h1 id="hero-title">
+              A simple shirt.<br /><em>For all you carry.</em>
+            </h1>
           </div>
+          <span class="reference-watermark" aria-hidden="true">EKO</span>
           <img
-            class="shirt-image"
-            src="assets/white-shirt.svg"
-            alt="Plain white, unbranded short-sleeved T-shirt"
-            width="800"
-            height="880"
+            class="reference-shirt"
+            src="assets/eko-shirt-editorial.png"
+            alt="Plain white crew-neck shirt with soft sculptural folds, an AI-generated concept"
+            width="1024"
+            height="1365"
             fetchpriority="high"
           />
-          <div class="image-caption">
-            <span>One product. Room for your point of view.</span
-            ><span aria-hidden="true">↙</span>
+          <a class="reference-scroll" href="#closer">Scroll to look within ↓</a>
+          <svg
+            class="reference-thread thread-one"
+            viewBox="0 0 400 800"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <path d="M-40 255 C80 375 80 255 225 330 S400 365 450 375" />
+          </svg>
+        </section>
+        <section
+          id="story"
+          class="reference-story"
+          aria-labelledby="story-title"
+        >
+          <img
+            class="reference-knot"
+            src="assets/eko-knot.png"
+            alt="Sculptural knot of entirely white fabric against a charcoal background; concept imagery"
+            width="1024"
+            height="1365"
+          />
+          <p class="eyebrow">01 / The human part</p>
+          <h2 id="story-title">
+            Not everything<br />we carry<br /><em>can be seen.</em>
+          </h2>
+          <p class="reference-story-foot">There is strength in continuing.</p>
+          <svg
+            class="reference-thread thread-two"
+            viewBox="0 0 400 800"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M220 -30 C180 60 460 20 360 230 S350 355 210 420 S80 365 -30 375"
+            />
+          </svg>
+        </section>
+        <section class="reference-history" aria-labelledby="history-title">
+          <img
+            class="reference-quilt"
+            src="assets/eko-quilt.png"
+            alt="Original conceptual patchwork of ivory and lavender cloth with visible stitching; not an archival quilt"
+            width="1024"
+            height="1365"
+          />
+          <span class="reference-year" aria-hidden="true">1987</span>
+          <div class="reference-history-copy">
+            <p class="eyebrow">1987 / An act of remembrance</p>
+            <h2 id="history-title">Love, made<br /><em>visible.</em></h2>
+          </div>
+          <div class="reference-history-foot">
+            <p>
+              The AIDS Memorial Quilt joins individual stories in collective
+              remembrance.
+            </p>
+            <a
+              href="https://www.aidsmemorial.org/quilt"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Read the history ↗</a
+            >
+            <p class="reference-source">
+              Source: National AIDS Memorial / Concept illustration. No
+              affiliation or endorsement.
+            </p>
+          </div>
+          <svg
+            class="reference-thread thread-three"
+            viewBox="0 0 400 800"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <path d="M-20 540 C85 465 155 565 280 475 S380 405 440 460" />
+          </svg>
+        </section>
+      </div>
+      <div class="reference-intro frame">
+        <p>Less on the surface. More underneath.</p>
+        <a href="#shirt">Discover the shirt ↗</a>
+      </div>
+      <section
+        id="closer"
+        class="eko-inside frame"
+        aria-labelledby="inside-title"
+      >
+        <p class="eyebrow">01 / The familiar, reconsidered</p>
+        <h2 id="inside-title" class="eko-heading">
+          Look closer.<br /><em>Let it be simple.</em>
+        </h2>
+        <p class="eko-note">
+          A familiar outline, seen a little differently. Follow the neckline,
+          sleeve and hem.
+        </p>
+        <div class="eko-scene">
+          <div class="eko-pin">
+            <figure class="eko-window">
+              <img
+                class="eko-detail"
+                src="assets/eko-shirt-editorial.png"
+                alt="Enlarged front-view concept showing the white shirt’s neckline, sleeve and hem"
+                width="1254"
+                height="1254"
+              />
+              <figcaption id="eko-detail-caption">01 / The neckline</figcaption>
+            </figure>
+            <div class="eko-detail-copy">
+              <p class="eyebrow">A closer look</p>
+              <h3 id="eko-detail-title">A familiar beginning.</h3>
+              <p id="eko-detail-text">
+                A simple crew neckline. Room for the person who wears it.
+              </p>
+              <button id="eko-motion-toggle" type="button" aria-pressed="false">
+                Pause motion
+              </button>
+              <p class="eko-note">
+                AI-generated concept image. These are visual close-ups; actual
+                construction, materials and an interior or back view have not
+                been supplied.
+              </p>
+            </div>
           </div>
         </div>
+      </section>
+      <section
+        id="meaning"
+        class="meaning frame"
+        aria-labelledby="meaning-title"
+      >
+        <div
+          class="meaning-art"
+          role="img"
+          aria-label="A white sphere with a fine orbit, an abstract study of light and connection"
+        >
+          <div class="light-disc"></div>
+          <span class="micro">A study in light / 001</span>
+        </div>
+        <div class="meaning-copy">
+          <p class="eyebrow">03 / Why white</p>
+          <h2 id="meaning-title" class="meaning-title">
+            Everything.<br />In its simplest form.
+          </h2>
+          <p>
+            In light, colors can come together to form white. For EKO, that
+            becomes a thought about us: different lives, a shared human spirit.
+          </p>
+          <p>
+            White is our symbol of purity. A little less ego. A little more room
+            for what connects us.
+          </p>
+          <p class="aside">
+            A simple shirt that stands for the strength you carry.
+          </p>
+        </div>
+      </section>
+      <section id="shirt" class="product frame" aria-labelledby="shirt-title">
+        <div class="product-photo">
+          <img
+            src="assets/eko-shirt-editorial.png"
+            alt="The same unbranded white T-shirt, shown from the front"
+            width="1254"
+            height="1254"
+            loading="lazy"
+          />
+        </div>
         <div class="product-information">
-          <p class="eyebrow">
-            <span class="status-dot" aria-hidden="true"></span> Neutral product
-            / demo only
+          <p class="eyebrow">04 / An everyday expression</p>
+          <h2 id="shirt-title" class="product-title">The white shirt.</h2>
+          <p class="product-description">
+            A familiar silhouette. A meaning of your own. For ordinary days, and
+            everything they hold.
           </p>
-          <h1 id="product-title">The white<br />T-shirt.</h1>
-          <p class="product-intro">A plain shirt. A place to begin.</p>
-          <p class="muted product-description">
-            This starter has a working product page and room for a brand. Its
-            audience, personality, message, and visual direction are still yours
-            to decide.
-          </p>
-          <div class="price-row">
-            <p class="price">$28 <span>USD</span></p>
-            <span class="micro-label">Fictional demo price</span>
-          </div>
-          <form id="product-form" class="product-form" novalidate>
-            <fieldset aria-describedby="size-help size-error">
-              <legend>Choose a size</legend>
-              <p id="size-help" class="field-help">
-                Demo sizes: S, M, L, and XL.
-              </p>
-              <div class="size-options">
-                <label class="size-option"
+          <div class="product-line"><span>Color</span><span>White</span></div>
+          <form id="product-form" novalidate>
+            <fieldset aria-describedby="size-error">
+              <legend>Choose your demo size</legend>
+              <div class="sizes">
+                <label class="size"
                   ><input type="radio" name="size" value="S" /><span
                     >S</span
                   ></label
-                >
-                <label class="size-option"
+                ><label class="size"
                   ><input type="radio" name="size" value="M" /><span
                     >M</span
                   ></label
-                >
-                <label class="size-option"
+                ><label class="size"
                   ><input type="radio" name="size" value="L" /><span
                     >L</span
                   ></label
-                >
-                <label class="size-option"
+                ><label class="size"
                   ><input type="radio" name="size" value="XL" /><span
                     >XL</span
                   ></label
                 >
               </div>
-              <p id="size-error" class="field-error" role="alert" hidden>
+              <p id="size-error" class="error" role="alert" hidden>
                 Choose a size before adding the shirt to your demo bag.
               </p>
             </fieldset>
-            <button class="button button-primary add-button" type="submit">
-              Add to demo bag <span aria-hidden="true">↗</span>
+            <button class="pill add-button" type="submit">
+              Add to demo bag
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M5 12h14m-6-6 6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+              </svg>
             </button>
           </form>
-          <p class="demo-disclaimer">
-            A classroom interaction, using fictional product data. No order,
-            payment, or personal information is collected.
+          <div id="demo-bag" class="bag-status">
+            <p
+              id="bag-status"
+              class="status"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              Your demo bag is empty.
+            </p>
+            <ul id="bag-items" class="bag-items"></ul>
+            <button id="clear-bag" class="clear-bag" type="button" disabled>
+              Empty demo bag
+            </button>
+          </div>
+          <p class="notice">
+            A product concept. Image is an AI-generated visualization. Demo
+            sizes only; no orders or payments. Your bag resets on refresh.
           </p>
-          <dl class="product-facts">
-            <div>
-              <dt>Color</dt>
-              <dd>White</dd>
-            </div>
-            <div>
-              <dt>Brand identity</dt>
-              <dd>Not decided yet</dd>
-            </div>
-            <div>
-              <dt>Product claims</dt>
-              <dd>None supplied</dd>
-            </div>
-          </dl>
-        </div>
-      </section>
-
-      <section
-        id="demo-bag"
-        class="bag-section wrap"
-        aria-labelledby="bag-title"
-      >
-        <div>
-          <p class="eyebrow">A small working interaction</p>
-          <h2 id="bag-title">Your demo bag.</h2>
-        </div>
-        <div class="bag-details">
-          <p
-            id="bag-status"
-            class="bag-message"
-            role="status"
-            aria-live="polite"
-            aria-atomic="true"
-          >
-            Your demo bag is empty. Choose a size to try it.
-          </p>
-          <ul id="bag-items" class="bag-items"></ul>
-          <button id="clear-bag" class="text-button" type="button" disabled>
-            Empty demo bag
-          </button>
-          <p class="field-help">
-            The bag resets when this page reloads. There is no checkout.
-          </p>
-        </div>
-      </section>
-
-      <section class="starter-next wrap" aria-labelledby="next-title">
-        <p class="eyebrow">For the person building this site</p>
-        <h2 id="next-title">The shirt stays.<br />The story is your work.</h2>
-        <div>
-          <p>
-            Choose who this is for, decide what the brand should express, and
-            make those choices visible. Keep the storefront and its
-            <a href="styleguide.html">live style guide</a> in sync.
-          </p>
-          <a class="button button-secondary" href="studio.html"
-            >See the studio brief <span aria-hidden="true">↗</span></a
-          >
         </div>
       </section>
     </main>
-
-    <footer class="site-footer wrap">
-      <p>
-        IS117 Brand Studio <span class="footer-separator"> / </span> Neutral
-        starter
-      </p>
-      <p class="footer-tagline">Fictional product. Real design decisions.</p>
-      <a href="https://github.com/kaw393939/is117-brand-studio#readme"
-        >Project README <span aria-hidden="true">↗</span></a
-      >
+    <footer class="footer frame">
+      <a class="logo" href="#main" aria-label="EKO back to top">
+        <img
+          class="eko-mark"
+          src="assets/eko-wordmark.svg"
+          alt="EKO"
+          width="220"
+          height="75"
+        />
+      </a>
+      <p class="footer-tagline">Quiet strength. Worn every day.</p>
+      <nav class="direction-switch" aria-label="More about EKO">
+        <a href="styleguide.html">Style guide</a>
+        <a href="explorations/index.html">Design studies</a>
+      </nav>
     </footer>
   </body>
 </html>

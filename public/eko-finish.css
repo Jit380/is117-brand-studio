@@ -1,0 +1,429 @@
+.eko-mark {
+  width: 82px;
+  height: auto;
+}
+
+.eko-final .logo {
+  display: block;
+  font-size: 0;
+  letter-spacing: 0;
+}
+
+.eko-final .hero-title {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.055em;
+}
+
+.eko-final .story-title {
+  font-family: "Palatino Linotype", Palatino, Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(44px, 4.6vw, 70px);
+  line-height: 1.18;
+  letter-spacing: -0.035em;
+}
+
+.eko-final .story-emphasis {
+  display: block;
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(55px, 6.5vw, 95px);
+  color: var(--color-accent);
+  margin-top: 8px;
+}
+
+.eko-final .story-grid {
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 65px;
+}
+
+.eko-heading {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(45px, 5.8vw, 82px);
+  line-height: 1.06;
+  letter-spacing: -0.055em;
+}
+
+.eko-heading em {
+  font-weight: 400;
+}
+
+.eko-final .hero-title em {
+  font-family: Georgia, serif;
+}
+
+.eko-note {
+  font-size: 11px;
+  line-height: 1.8;
+  color: var(--color-muted);
+  margin-top: 18px;
+}
+
+.eko-inside {
+  padding-top: 100px;
+}
+
+.eko-inside > .eyebrow {
+  margin-bottom: 30px;
+}
+
+.eko-scene {
+  height: 220vh;
+}
+
+.eko-pin {
+  position: sticky;
+  top: 25px;
+  min-height: 94vh;
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.eko-window {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #eeece9;
+}
+
+.eko-detail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(var(--dx, 0%), var(--dy, 0%)) scale(var(--zoom, 1));
+  will-change: transform;
+}
+
+.eko-window figcaption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  background: #f2f1eeee;
+  border-radius: 30px;
+  font-size: 11px;
+}
+
+.eko-detail-copy h3 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: 38px;
+  letter-spacing: -0.04em;
+  margin-block: 22px;
+}
+
+.eko-guide-section p {
+  font-size: 15px;
+  line-height: 1.9;
+  max-width: 800px;
+  color: var(--color-muted);
+}
+
+.eko-detail-copy > p:not(.eyebrow) {
+  line-height: 1.85;
+  color: var(--color-muted);
+}
+
+#eko-motion-toggle {
+  margin-top: 24px;
+  padding: 10px 16px;
+  border: 1px solid var(--color-line);
+  border-radius: 30px;
+  background: none;
+  color: var(--color-ink);
+  font-size: 11px;
+}
+
+.eko-history {
+  position: relative;
+  isolation: isolate;
+  padding-block: 140px;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 75px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.eko-year {
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+  right: 0;
+  font-family: Georgia, serif;
+  font-size: clamp(140px, 25vw, 360px);
+  line-height: 1;
+  color: #dedbdf;
+}
+
+.eko-history-copy .eyebrow {
+  margin-bottom: 28px;
+}
+
+.eko-history-copy > p:not(.eyebrow) {
+  font-size: 15px;
+  line-height: 1.9;
+  max-width: 400px;
+  margin-top: 24px;
+  color: var(--color-muted);
+}
+
+.eko-history-copy .text-link {
+  display: inline-block;
+  margin-top: 28px;
+  text-decoration: underline;
+}
+
+.eko-quilt {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  aspect-ratio: 1;
+  transform: rotate(-7deg);
+  padding: 20px;
+  filter: drop-shadow(12px 22px 25px #0002);
+}
+
+.eko-quilt span {
+  background: linear-gradient(145deg, #fff, #e9e6e1);
+  border: 2px dashed #fff;
+  box-shadow: inset 2px 4px 9px #0001;
+}
+
+.eko-quilt span:nth-child(3n) {
+  background: linear-gradient(32deg, #f7f5f0, #fff);
+  transform: rotate(1deg);
+}
+
+.eko-static .eko-scene {
+  height: auto;
+}
+
+.eko-static .eko-pin {
+  position: relative;
+  top: auto;
+}
+
+.eko-static .eko-detail {
+  transform: none;
+  will-change: auto;
+}
+
+.bag-items {
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--color-muted);
+  padding-left: 20px;
+}
+
+.eko-guide {
+  padding-block: 75px;
+}
+
+.eko-guide-intro {
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--color-muted);
+  margin-top: 30px;
+}
+
+.eko-guide-section {
+  padding-block: 65px;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.eko-guide-section h2 {
+  font-family: Georgia, serif;
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  margin-bottom: 25px;
+}
+
+.eko-logo-board {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 60px;
+  padding: 40px;
+  background: #fff;
+}
+
+.eko-logo-board .eko-large-mark {
+  width: 260px;
+  height: auto;
+}
+
+.eko-reverse {
+  padding: 30px;
+  background: var(--color-ink);
+}
+
+.eko-reverse img {
+  filter: invert(1);
+}
+
+.eko-palette {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.eko-swatch {
+  height: 110px;
+  background: var(--sample);
+  border: 1px solid #0001;
+}
+
+.eko-color-label {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.eko-color-value {
+  font-size: 11px;
+  color: var(--color-muted);
+}
+
+.eko-type-sample {
+  padding: 25px 0;
+  border-top: 1px solid var(--color-line);
+}
+
+.eko-type-sample .eko-heading {
+  font-size: 52px;
+}
+
+.eko-guide-story {
+  font-family: "Palatino Linotype", Palatino, Georgia, serif;
+  font-style: italic;
+  font-size: 45px;
+  line-height: 1.2;
+}
+
+.eko-guide-emphasis {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 58px;
+  color: var(--color-accent);
+}
+
+.eko-dark-sample {
+  background: #222025;
+  padding: 35px;
+  color: #f6f3ee;
+}
+
+@media (width <= 700px) {
+  .eko-final .story-grid,
+  .eko-pin,
+  .eko-history {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .eko-final .story-title {
+    font-size: 43px;
+  }
+
+  .eko-final .story-emphasis {
+    font-size: 55px;
+  }
+
+  .eko-inside {
+    padding-top: 65px;
+  }
+
+  .eko-scene {
+    height: 190vh;
+  }
+
+  .eko-pin {
+    top: 12px;
+    min-height: 95vh;
+    gap: 25px;
+    align-content: center;
+  }
+
+  .eko-window {
+    width: min(100%, 42vh);
+    margin-inline: auto;
+  }
+
+  .eko-detail-copy h3 {
+    font-size: 28px;
+    margin-block: 12px;
+  }
+
+  .eko-detail-copy > p:not(.eyebrow) {
+    font-size: 13px;
+  }
+
+  .eko-detail-copy .eko-note {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  #eko-motion-toggle {
+    margin-top: 12px;
+  }
+
+  .eko-history {
+    padding-block: 95px;
+  }
+
+  .eko-heading {
+    font-size: 47px;
+  }
+
+  .eko-palette {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .eko-guide-section {
+    padding-block: 45px;
+  }
+
+  .eko-guide-emphasis {
+    font-size: 42px;
+  }
+
+  .eko-guide-story {
+    font-size: 35px;
+  }
+
+  .eko-logo-board {
+    gap: 35px;
+    padding: 25px;
+  }
+
+  .eko-mark {
+    width: 70px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .eko-scene {
+    height: auto;
+  }
+
+  .eko-pin {
+    position: relative;
+    top: auto;
+  }
+
+  .eko-detail {
+    transform: none !important;
+    will-change: auto;
+  }
+}

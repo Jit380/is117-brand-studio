@@ -54,7 +54,7 @@ test("development refreshes saved HTML, CSS, JavaScript and assets; plain previe
     await expect(page.locator("#bag-count")).toHaveText("0");
 
     await save(
-      "styles.css",
+      "eko-shared.css",
       (css) => `${css}\n:root { --reload-proof: saved-css; }\n`,
     );
     expect(
@@ -75,11 +75,11 @@ test("development refreshes saved HTML, CSS, JavaScript and assets; plain previe
       "saved-js",
     );
 
-    await save("assets/white-shirt.svg", (svg) =>
-      svg.replace("<svg ", '<svg width="123" height="123" '),
+    await save("assets/eko-wordmark.svg", (svg) =>
+      svg.replace("<svg", '<svg width="123" height="123" '),
     );
     await expect(
-      page.locator('img[src="assets/white-shirt.svg"]'),
+      page.locator('header img[src="assets/eko-wordmark.svg"]'),
     ).toHaveJSProperty("naturalWidth", 123);
 
     await expect(plain).toHaveTitle(originalTitle);

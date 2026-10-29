@@ -3,413 +3,287 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="The live, neutral brand board for the IS117 T-shirt storefront. Shared tokens and assets keep design choices connected to the page."
-    />
-    <title>Live style guide — Your Brand starter</title>
+    <title>EKO — Live style guide</title>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="styleguide.js" defer></script>
+    <link rel="stylesheet" href="eko-shared.css" />
+    <link rel="stylesheet" href="eko-finish.css" />
+    <link rel="stylesheet" href="eko-editorial.css" />
+    <script src="eko-guide.js" defer></script>
   </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <aside class="starter-notice" aria-label="Starter information">
-      <span
-        ><strong>Neutral examples.</strong> Replace this identity after your
-        decisions; this board shares the storefront’s CSS and logo.</span
-      ><a href="studio.html">Studio brief <span aria-hidden="true">↗</span></a>
-    </aside>
-    <header class="site-header wrap">
-      <a
-        class="brand-link"
-        href="index.html"
-        aria-label="Your Brand storefront home"
-        ><img
-          class="wordmark"
-          src="assets/wordmark.svg"
-          alt="Neutral starter wordmark"
-          width="175"
-          height="26"
-      /></a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a class="nav-link" href="index.html">Shop</a
-        ><a class="nav-link" href="styleguide.html" aria-current="page"
-          >Style guide</a
-        ><a class="nav-link" href="studio.html"
-          >Studio <span aria-hidden="true">↗</span></a
-        >
+  <body class="postmodern eko-final eko-styleguide">
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="topbar frame">
+      <a class="logo" href="index.html" aria-label="EKO storefront home">
+        <img
+          class="eko-mark"
+          src="assets/eko-wordmark.svg"
+          alt="EKO"
+          width="220"
+          height="75"
+        />
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">The shirt</a>
+        <a href="styleguide.html" aria-current="page">Style guide</a>
+        <a href="studio.html">Studio</a>
       </nav>
-      <span class="micro-label">Live brand board</span>
     </header>
-    <main id="main">
-      <section class="page-hero wrap" aria-labelledby="guide-title">
-        <p class="eyebrow">
-          <span class="status-dot" aria-hidden="true"></span> Identity / version
-          00 / neutral starter
-        </p>
-        <h1 id="guide-title">A brand, kept<br />in one place.</h1>
-        <p class="hero-summary">
-          A working board for the choices behind the storefront.
-          <strong>These are neutral examples, ready to replace.</strong> Decide
-          who the brand serves before making its identity your own.
-        </p>
-      </section>
-      <nav class="page-subnav wrap" aria-label="Style guide sections">
-        <a class="section-link" href="#direction">00 Direction</a
-        ><a class="section-link" href="#logo">01 Logo</a
-        ><a class="section-link" href="#palette">02 Color</a
-        ><a class="section-link" href="#type">03 Type</a
-        ><a class="section-link" href="#spacing">04 Space</a
-        ><a class="section-link" href="#buttons">05 Buttons</a
-        ><a class="section-link" href="#voice">06 Voice</a>
-      </nav>
+
+    <main id="main" class="eko-guide frame">
+      <p class="eyebrow">EKO / The living identity</p>
+      <h1 class="eko-heading">
+        A simple shirt.<br /><em>For all you carry.</em>
+      </h1>
+      <p class="eko-guide-intro">
+        A shared identity for the storefront and its story. This board uses the
+        same styles, fonts, colors, components and SVG wordmark.
+      </p>
 
       <section
         id="direction"
-        class="guide-section wrap"
+        class="eko-guide-section"
         aria-labelledby="direction-title"
       >
-        <div class="section-heading">
-          <span class="section-number">00 / Direction</span>
-          <h2 id="direction-title">Decisions first.</h2>
-          <p>Record your agreed reasoning in SPEC.md, then reflect it here.</p>
-        </div>
-        <div class="guide-content">
-          <span class="draft-label">Not a completed brand strategy</span>
-          <div class="decision-grid">
-            <div>
-              <h3>Audience</h3>
-              <p class="undecided">To decide</p>
-              <p>
-                Use your personas to identify a need this page should answer.
-              </p>
-            </div>
-            <div>
-              <h3>Archetype</h3>
-              <p class="undecided">To decide</p>
-              <p>Choose one and explain the personality it gives the brand.</p>
-            </div>
-            <div>
-              <h3>Visual direction</h3>
-              <p class="undecided">To decide</p>
-              <p>
-                Compare approaches, then justify your choice for this audience.
-              </p>
-            </div>
-          </div>
-        </div>
+        <h2 id="direction-title">The human part.</h2>
+
+        <p>
+          <strong>Archetype:</strong> Lover, expressed as emotional depth,
+          tenderness and human connection.
+        </p>
+        <p><strong>Voice:</strong> Personal, sincere and understated.</p>
+        <p>
+          <strong>Audience:</strong> Everyday wearers, especially students and
+          adults 18–40, seeking meaning in simplicity. This is an audience
+          hypothesis.
+        </p>
+        <p>
+          <strong>Promise:</strong> A simple shirt that stands for the strength
+          you carry.
+        </p>
       </section>
 
-      <section
-        id="logo"
-        class="guide-section wrap"
-        aria-labelledby="logo-title"
-      >
-        <div class="section-heading">
-          <span class="section-number">01 / Logo</span>
-          <h2 id="logo-title">A placeholder<br />with a purpose.</h2>
-          <p>
-            Replace after your decisions. The same SVG appears on the
-            storefront.
-          </p>
-        </div>
-        <div class="guide-content">
-          <div class="logo-board">
+      <section id="logo" class="eko-guide-section" aria-labelledby="logo-title">
+        <h2 id="logo-title">Three letters. Room to breathe.</h2>
+
+        <div class="eko-logo-board">
+          <img
+            class="eko-large-mark"
+            src="assets/eko-wordmark.svg"
+            alt="EKO wordmark proposal"
+            width="220"
+            height="75"
+          />
+
+          <img
+            class="eko-mark"
+            src="assets/eko-wordmark.svg"
+            alt="EKO"
+            width="220"
+            height="75"
+          />
+
+          <div class="eko-reverse">
             <img
-              src="assets/wordmark.svg"
-              alt="Neutral starter wordmark"
-              width="350"
-              height="52"
+              class="eko-mark"
+              src="assets/eko-wordmark.svg"
+              alt="EKO"
+              width="220"
+              height="75"
             />
           </div>
-          <div class="logo-variants">
-            <div class="logo-variant">
-              <img
-                class="logo-small"
-                src="assets/wordmark.svg"
-                alt="Neutral starter wordmark at a small size"
-                width="110"
-                height="16"
-              />
-              <p>Small-size preview · 110px wide</p>
-            </div>
-            <div class="logo-variant">
-              <img
-                class="logo-mono"
-                src="assets/wordmark.svg"
-                alt="Neutral starter wordmark in monochrome"
-                width="190"
-                height="28"
-              />
-              <p>Monochrome preview · one color</p>
-            </div>
-          </div>
-          <p class="guide-note">
-            Check your replacement at the actual header size and in one color. A
-            simple original wordmark is enough; the same SVG may serve each
-            presentation if it works. This one-color preview uses transparent
-            artwork with a flat black treatment. Give it breathing room and a
-            useful text alternative. Keep the shared source at
-            <code>assets/wordmark.svg</code>.
-          </p>
         </div>
+        <p>
+          Shared SVG proposal shown large, at navigation size, and reversed from
+          one-color artwork. Final logo review remains open.
+        </p>
       </section>
 
       <section
         id="palette"
-        class="guide-section wrap"
+        class="eko-guide-section"
         aria-labelledby="palette-title"
       >
-        <div class="section-heading">
-          <span class="section-number">02 / Color</span>
-          <h2 id="palette-title">Color has<br />a job to do.</h2>
-          <p>
-            Neutral starter roles. The swatches and values come from the same
-            shared CSS tokens.
-          </p>
-        </div>
-        <div class="guide-content">
-          <div class="palette-grid">
-            <article class="palette-card">
-              <div
-                class="color-swatch"
-                style="--swatch-color: var(--color-paper)"
-              ></div>
-              <h3>Paper</h3>
-              <code data-color-token="--color-paper">CSS token</code>
-              <p>Page background</p>
-            </article>
-            <article class="palette-card">
-              <div
-                class="color-swatch"
-                style="--swatch-color: var(--color-ink)"
-              ></div>
-              <h3>Ink</h3>
-              <code data-color-token="--color-ink">CSS token</code>
-              <p>Text and primary action</p>
-            </article>
-            <article class="palette-card">
-              <div
-                class="color-swatch"
-                style="--swatch-color: var(--color-accent)"
-              ></div>
-              <h3>Accent</h3>
-              <code data-color-token="--color-accent">CSS token</code>
-              <p>Starter notice and emphasis</p>
-            </article>
-            <article class="palette-card">
-              <div
-                class="color-swatch"
-                style="--swatch-color: var(--color-soft)"
-              ></div>
-              <h3>Soft</h3>
-              <code data-color-token="--color-soft">CSS token</code>
-              <p>Image and example surfaces</p>
-            </article>
-            <article class="palette-card">
-              <div
-                class="color-swatch"
-                style="--swatch-color: var(--color-muted)"
-              ></div>
-              <h3>Muted</h3>
-              <code data-color-token="--color-muted">CSS token</code>
-              <p>Supporting text</p>
-            </article>
-          </div>
-          <p class="guide-note">
-            Give each color a role. Check contrast for the actual text,
-            backgrounds, focus indicators, and button states you use.
-          </p>
-        </div>
-      </section>
+        <h2 id="palette-title">Color has a role.</h2>
 
-      <section
-        id="type"
-        class="guide-section wrap"
-        aria-labelledby="type-title"
-      >
-        <div class="section-heading">
-          <span class="section-number">03 / Typography</span>
-          <h2 id="type-title">A clear<br />hierarchy.</h2>
-          <p>
-            System fonts keep this starter self-contained. Replace
-            intentionally, with readable fallbacks.
-          </p>
-        </div>
-        <div class="guide-content">
-          <div class="type-specimen">
-            <span class="type-label"
-              >Display / shared display family / placeholder copy</span
+        <div class="eko-palette">
+          <article>
+            <div
+              class="eko-swatch"
+              style="--sample: var(--color-display-accent)"
+            ></div>
+            <h3 class="eko-color-label">Lavender / on paper</h3>
+            <code
+              class="eko-color-value"
+              data-color-token="--color-display-accent"
+              >CSS token</code
             >
-            <p class="type-display">Your message<br />starts here.</p>
-          </div>
-          <div class="type-specimen">
-            <span class="type-label">Body / shared body family</span>
-            <p class="type-body">
-              Use clear language to help someone understand the product and
-              choose their next step. Keep the words grounded in what you
-              actually know.
-            </p>
-          </div>
-          <div class="type-specimen">
-            <span class="type-label">Label / system monospace</span>
-            <p class="type-mono">One product. Deliberate choices.</p>
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="spacing"
-        class="guide-section wrap"
-        aria-labelledby="spacing-title"
-      >
-        <div class="section-heading">
-          <span class="section-number">04 / Spacing</span>
-          <h2 id="spacing-title">Room to read.</h2>
-          <p>
-            Shared spacing tokens create a repeatable rhythm. Adapt the scale to
-            your direction.
-          </p>
-        </div>
-        <div class="guide-content">
-          <div class="spacing-grid">
-            <div class="spacing-token">
-              <div
-                class="spacing-bar"
-                style="--token-size: var(--space-1)"
-              ></div>
-              <span class="token-name">Space 1</span
-              ><code data-space-token="--space-1">CSS token</code>
-            </div>
-            <div class="spacing-token">
-              <div
-                class="spacing-bar"
-                style="--token-size: var(--space-2)"
-              ></div>
-              <span class="token-name">Space 2</span
-              ><code data-space-token="--space-2">CSS token</code>
-            </div>
-            <div class="spacing-token">
-              <div
-                class="spacing-bar"
-                style="--token-size: var(--space-3)"
-              ></div>
-              <span class="token-name">Space 3</span
-              ><code data-space-token="--space-3">CSS token</code>
-            </div>
-            <div class="spacing-token">
-              <div
-                class="spacing-bar"
-                style="--token-size: var(--space-4)"
-              ></div>
-              <span class="token-name">Space 4</span
-              ><code data-space-token="--space-4">CSS token</code>
-            </div>
-            <div class="spacing-token">
-              <div
-                class="spacing-bar"
-                style="--token-size: var(--space-5)"
-              ></div>
-              <span class="token-name">Space 5</span
-              ><code data-space-token="--space-5">CSS token</code>
-            </div>
-            <div class="spacing-token">
-              <div
-                class="spacing-bar"
-                style="--token-size: var(--space-6)"
-              ></div>
-              <span class="token-name">Space 6</span
-              ><code data-space-token="--space-6">CSS token</code>
-            </div>
-          </div>
-          <p class="guide-note">
-            Use smaller gaps for related information and larger gaps between
-            sections. Check the rhythm at phone and desktop widths.
-          </p>
-        </div>
-      </section>
-
-      <section
-        id="buttons"
-        class="guide-section wrap"
-        aria-labelledby="buttons-title"
-      >
-        <div class="section-heading">
-          <span class="section-number">05 / Interaction</span>
-          <h2 id="buttons-title">The next<br />step, visible.</h2>
-          <p>These visual samples use the storefront’s button classes.</p>
-        </div>
-        <div class="guide-content">
-          <div class="button-samples">
-            <span class="button button-primary"
-              >Primary action <span aria-hidden="true">↗</span></span
-            ><span class="button button-secondary"
-              >Secondary action <span aria-hidden="true">↗</span></span
+          </article>
+          <article>
+            <div class="eko-swatch" style="--sample: var(--color-paper)"></div>
+            <h3 class="eko-color-label">Paper</h3>
+            <code class="eko-color-value" data-color-token="--color-paper"
+              >CSS token</code
             >
-          </div>
-          <p class="guide-note">
-            Use a clear action label and a visible keyboard focus state. Try the
-            real size choice, validation, and demo-bag feedback on the
-            <a href="index.html">storefront</a>.
-          </p>
-        </div>
-      </section>
+          </article>
 
-      <section
-        id="voice"
-        class="guide-section wrap"
-        aria-labelledby="voice-title"
-      >
-        <div class="section-heading">
-          <span class="section-number">06 / Voice</span>
-          <h2 id="voice-title">Words are<br />design, too.</h2>
-          <p>
-            Replace this neutral example after choosing your audience and
-            archetype.
-          </p>
-        </div>
-        <div class="guide-content">
-          <div class="voice-grid">
-            <div>
-              <h3>Neutral interface example</h3>
-              <p class="voice-example">“Choose a size.”</p>
-              <p>Short, direct, and specific about the next action.</p>
-            </div>
-            <div>
-              <h3>Your brand voice is still open</h3>
-              <p>
-                Decide how your brand should sound and show that with a short
-                sample. Use honest claims. Ethical persuasion helps people make
-                a choice without invented reviews, urgency, or authority.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+          <article>
+            <div class="eko-swatch" style="--sample: var(--color-ink)"></div>
+            <h3 class="eko-color-label">Ink</h3>
+            <code class="eko-color-value" data-color-token="--color-ink"
+              >CSS token</code
+            >
+          </article>
 
-      <div class="guide-footer-note wrap">
+          <article>
+            <div class="eko-swatch" style="--sample: var(--color-accent)"></div>
+            <h3 class="eko-color-label">Lavender</h3>
+            <code class="eko-color-value" data-color-token="--color-accent"
+              >CSS token</code
+            >
+          </article>
+
+          <article>
+            <div class="eko-swatch" style="--sample: var(--color-soft)"></div>
+            <h3 class="eko-color-label">Atmosphere</h3>
+            <code class="eko-color-value" data-color-token="--color-soft"
+              >CSS token</code
+            >
+          </article>
+
+          <article>
+            <div class="eko-swatch" style="--sample: var(--color-muted)"></div>
+            <h3 class="eko-color-label">Muted</h3>
+            <code class="eko-color-value" data-color-token="--color-muted"
+              >CSS token</code
+            >
+          </article>
+        </div>
         <p>
-          <strong>A living reference.</strong> Change the shared tokens and
-          logo, then compare this board with the storefront at the same width.
-          Check the logo, typography, components, color roles, and voice text;
-          sharing a stylesheet alone does not keep every example current. Save
-          the reason for your choices in SPEC.
+          Deep lavender gives display type contrast on paper; pale lavender is
+          used on dark backgrounds. Lavender belongs to typography and interface
+          accents. The shirt, fabric illustration and garment stitching remain
+          white.
         </p>
-        <a href="index.html"
-          >View the storefront <span aria-hidden="true">↗</span></a
-        >
-      </div>
-    </main>
-    <footer class="site-footer wrap">
-      <p>
-        IS117 Brand Studio <span class="footer-separator"> / </span> Neutral
-        starter
-      </p>
-      <p class="footer-tagline">Fictional product. Real design decisions.</p>
-      <a href="https://github.com/kaw393939/is117-brand-studio#readme"
-        >Project README <span aria-hidden="true">↗</span></a
+      </section>
+
+      <section id="type" class="eko-guide-section" aria-labelledby="type-title">
+        <h2 id="type-title">Expressive form. A quiet voice.</h2>
+
+        <div class="eko-type-sample">
+          <p>
+            Display / Georgia · oversized, tightly set · italic lavender
+            emphasis
+          </p>
+          <div class="eko-heading">
+            A simple shirt.<br /><em>For all you carry.</em>
+          </div>
+        </div>
+        <div class="eko-dark-sample">
+          <div class="eko-guide-story">Not everything<br />we carry</div>
+          <div class="eko-guide-emphasis">can be seen.</div>
+        </div>
+        <div class="eko-type-sample">
+          <p>Body / IBM Plex Sans</p>
+          <p>
+            There is strength in continuing. In making room for hope. In being
+            human.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="components"
+        class="eko-guide-section"
+        aria-labelledby="components-title"
       >
+        <h2 id="components-title">A useful invitation.</h2>
+
+        <div class="button-samples">
+          <a class="pill" href="index.html#shirt">Discover the shirt ↗</a>
+          <a class="text-link" href="index.html#closer">Take a closer look ↓</a>
+        </div>
+        <p>
+          Controls use the storefront’s component styles. Size selection and the
+          temporary demo bag stay on the main page.
+        </p>
+      </section>
+
+      <section class="eko-guide-section" aria-labelledby="imagery-title">
+        <h2 id="imagery-title">White, shaped by light.</h2>
+        <img
+          class="guide-fabric"
+          src="assets/eko-knot.png"
+          alt="White fabric tied into a sculptural knot on a dark background"
+          width="1536"
+          height="1024"
+          loading="lazy"
+        />
+        <p>
+          Use directional light, neutral shadows and generous crops. A centered
+          shirt, dark knotted-fabric chapter and conceptual quilt form the
+          three-part opening; a fine lavender thread connects their stories.
+          Garments stay entirely white: no colored overlays, prints or logos.
+          Lavender is reserved for type and interface accents. The abstract
+          fabric is an AI-generated mood study, not evidence of the shirt’s
+          material or construction.
+        </p>
+      </section>
+      <section class="eko-guide-section" aria-labelledby="thread-title">
+        <h2 id="thread-title">A thread through the story.</h2>
+        <div class="guide-thread" aria-hidden="true"></div>
+        <p>
+          A fine lavender line links the three opening chapters. It is
+          decorative, never a navigation control. Keep the shirt white; ivory
+          and lavender patchwork belongs only to the remembrance illustration.
+        </p>
+        <img
+          class="guide-fabric"
+          src="assets/eko-quilt.png"
+          alt="Conceptual ivory and lavender patchwork with visible hand stitching"
+          width="1024"
+          height="1365"
+          loading="lazy"
+        />
+      </section>
+      <section
+        id="motion"
+        class="eko-guide-section"
+        aria-labelledby="motion-title"
+      >
+        <h2 id="motion-title">Follow attention.</h2>
+
+        <p>
+          Scroll-linked close-ups reveal the neckline, sleeve and hem shown in
+          the concept image. A Pause motion control and system reduced-motion
+          preferences provide a static view. No interior or back view, fabric
+          specification or performance claim is supplied.
+        </p>
+      </section>
+
+      <section
+        id="meaning"
+        class="eko-guide-section"
+        aria-labelledby="meaning-title"
+      >
+        <h2 id="meaning-title">Love, made visible.</h2>
+
+        <p>
+          The story explores unseen burdens and shared humanity. The historical
+          section links to the National AIDS Memorial for the AIDS Memorial
+          Quilt’s history. Its ivory and lavender patchwork illustration is
+          conceptual, not an archival image or an endorsement of EKO.
+        </p>
+        <p>
+          The shirt remains a demo: no orders, payments, accounts or
+          persistence. The same working typography and wordmark are shared with
+          the storefront.
+        </p>
+      </section>
+    </main>
+    <footer class="footer frame">
+      <a href="index.html">Return to EKO ↗</a>
+      <p>Quiet strength. Worn every day.</p>
     </footer>
   </body>
 </html>
