@@ -78,7 +78,7 @@ jobs:
               await page.locator('img').evaluateAll(images => Promise.all(images.map(image => image.decode())));
               if (!route) {
                 assert.match(await page.locator('h1').textContent(), /A simple shirt/);
-                for (const name of ['eko-shirt-editorial.png', 'eko-knot.png', 'eko-quilt.png']) {
+                for (const name of ['eko-shirt-editorial.png', 'eko-knot.png', 'eko-quilt.png', 'eko-lotus.png']) {
                   assert.ok(await page.locator(`img[src="assets/${name}"]`).count());
                 }
                 await page.getByRole('button', {name: 'Add to demo bag', exact: true}).click();
@@ -89,6 +89,16 @@ jobs:
                 assert.equal(await page.locator('#bag-count').textContent(), '1');
                 await page.getByRole('button', {name: 'Empty demo bag', exact: true}).click();
                 assert.equal(await page.locator('#bag-count').textContent(), '0');
+                await page.setViewportSize({width: 390, height: 844});
+                const lotus = page.locator('#meaning .lotus-image');
+                await lotus.scrollIntoViewIfNeeded();
+                await lotus.evaluate(image => image.decode());
+                assert.match(await lotus.evaluate(image => image.currentSrc), /eko-lotus-mobile\.png$/);
+                const section = await page.locator('#meaning').boundingBox();
+                assert.equal(section.x, 0);
+                assert.equal(section.width, 390);
+                console.log('Verified full-width lotus section and mobile image.');
+                await page.setViewportSize({width: 1280, height: 720});
               }
               console.log(`Verified deployed page and all images: ${new URL(route, base)}`);
             }

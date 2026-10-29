@@ -97,3 +97,9 @@ The release presents a centered entirely white shirt, sculptural white fabric on
 Changed files include `public/index.html`, `public/styleguide.html`, shared `public/eko-*.css` and JavaScript, and `public/assets/eko-*.png` / `eko-wordmark.svg`. Existing exploration pages, their source notes and tests are preserved. No unreviewed LEARNING.md excerpts, local screenshots, scripts, caches or dependencies are part of this release.
 
 Validation before publication: formatting, HTML/CSS/JavaScript lint, seven server tests, and the full browser suite using system Chromium. The GitHub workflow uses its standard Playwright Chromium installation and additionally verifies the deployed root, three new image assets, shared style guide and demo-bag operations. Human impressions, audience reasoning and other learning criteria are not inferred from these checks. Publication is separate from completion of all BRAND-001 learning evidence.
+
+## LOTUS-001 — full-width Why white chapter
+
+Replaces the abstract sphere in `#meaning` with an overhead white lotus in pond water and green lily pads. The photograph fills the whole section; copy overlays a dark gradient. A dedicated portrait image keeps the lotus above the text on narrow screens. Both images are AI-generated botanical mood studies. The shirt and demo bag are unchanged, and the guide documents the matching imagery and layout.
+
+Files: `public/index.html`, `public/eko-editorial.css`, `public/styleguide.html`, `public/assets/eko-lotus.png`, `public/assets/eko-lotus-mobile.png`. The existing deployment verification additionally loads the mobile lotus asset and checks the section fills the viewport width.
