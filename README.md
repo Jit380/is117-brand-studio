@@ -1,5 +1,9 @@
 # IS117 Brand Studio
 
+**Published EKO website:** [Open the storefront](https://jit380.github.io/is117-brand-studio/) · [Live style guide](https://jit380.github.io/is117-brand-studio/styleguide.html)
+
+GitHub Pages hosts the site independently of your computer, with free hosting for this public repository. It is plain HTML/CSS/browser JavaScript and needs no production backend. The current website source is [`feature/brand-001-first-branded-storefront`](https://github.com/Jit380/is117-brand-studio/tree/feature/brand-001-first-branded-storefront); pushes there automatically publish the website after checks. This `main` branch runs checks only. [Exact publishing commands and settings](docs/deployment.md).
+
 **The same white T-shirt can carry very different meanings.** Develop a brand for it with an AI collaborator, then make those decisions visible in a professional website and a live style guide.
 
 This template starts with a working, deliberately neutral storefront. Your audience, name, promise, logo, voice, and visual direction are **not chosen yet**. You make the decisions; the agent helps you explore, build, check, and revise them.
@@ -76,8 +80,8 @@ Checks can find defects and some accessibility barriers. They do not verify that
 
 After `BRAND-001`, choose **one** next cycle with less guidance: perhaps a useful brand story, a fit guide with supported information, or a richer demo bag. A real checkout would be a separate project decision.
 
-## Publish when you keep the site
+## Hosting and publication
 
-After you approve keeping the checked change and it is merged into `main`, you can publish it. Let the agent guide you through your repository's **Settings → Pages → Source → GitHub Actions**, then **Actions → Check and publish → Run workflow** on `main`. Open the deployment URL reported by that run. Later pushes to `main` publish automatically after checks pass. Until Pages is configured, the workflow checks the project and skips publishing successfully; first setup does not require deployment.
+The EKO site is already hosted at https://jit380.github.io/is117-brand-studio/ and stays available when your computer is off.
 
-If Settings is missing or shows a 404, sign into the owning GitHub account in that browser. Terminal SSH authentication does not sign the browser in.
+Use `feature/brand-001-first-branded-storefront` for website changes; pushes to that branch automatically publish `public/` through **Publish EKO website**. **Project checks** validates `main` and pull requests without deployment. Follow the [deployment instructions](docs/deployment.md) for exact commands, Pages settings and manual republishing.
