@@ -2,11 +2,13 @@
 
 **Published EKO website:** [Open the storefront](https://jit380.github.io/is117-brand-studio/) · [Live style guide](https://jit380.github.io/is117-brand-studio/styleguide.html)
 
+Project review: [current EKO decisions and evidence](SPEC.md) · [reviewed learning summary](LEARNING.md).
+
 GitHub Pages hosts the site independently of your computer, with free hosting for this public repository. It is plain HTML/CSS/browser JavaScript and needs no production backend. The current website source is [`feature/brand-001-first-branded-storefront`](https://github.com/Jit380/is117-brand-studio/tree/feature/brand-001-first-branded-storefront); pushes there automatically publish the website after checks. This `main` branch runs checks only. [Exact publishing commands and settings](docs/deployment.md).
 
 **The same white T-shirt can carry very different meanings.** Develop a brand for it with an AI collaborator, then make those decisions visible in a professional website and a live style guide.
 
-This template starts with a working, deliberately neutral storefront. Your audience, name, promise, logo, voice, and visual direction are **not chosen yet**. You make the decisions; the agent helps you explore, build, check, and revise them.
+The original neutral template is preserved in the source files on main. The published EKO identity and its reviewed evidence are linked above; current website code is on the EKO feature branch. The setup instructions below remain as reference for the studio process.
 
 **A short record, visible to you:** your AI coach updates [LEARNING.md](LEARNING.md) with brief task-related explanations, observations and help received. It is AI-drafted, not a full transcript, and may be public with your repository. Review it and correct or remove excerpts before they are committed or pushed. Your instructor uses it alongside the project with this [simple three-part rubric](docs/assessment.md); the AI does not assign your grade.
 
