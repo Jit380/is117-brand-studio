@@ -716,3 +716,28 @@ body.eko-final {
 .eko-guide-section p.eko-story-line {
   color: var(--color-display-accent);
 }
+
+.journey-thread .thread-base {
+  opacity: 0.3;
+}
+
+.journey-thread .thread-trace {
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.journey-thread .thread-tip {
+  fill: var(--color-accent);
+  stroke: var(--color-thread);
+  stroke-width: 1;
+  filter: drop-shadow(0 0 4px var(--color-accent));
+}
+
+.journey-thread[data-thread-mode="static"] .thread-base {
+  opacity: 1;
+}
+
+.journey-thread[data-thread-mode="static"] .thread-trace,
+.journey-thread[data-thread-mode="static"] .thread-tip {
+  display: none;
+}

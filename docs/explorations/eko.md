@@ -26,7 +26,7 @@ Intended effect: a quiet surface with emotional depth and a more expressive visu
 
 ## Validation and evidence
 
-The [current publication run](https://github.com/Jit380/is117-brand-studio/actions/runs/41474503263) passed formatting, JavaScript/HTML/CSS lint, seven Node server tests and fourteen Chromium browser tests. It additionally verified the published storefront, guide, approved meaning, image assets, mobile lotus, thread and demo bag.
+The [recorded publication run](https://github.com/Jit380/is117-brand-studio/actions/runs/41474503263) passed formatting, JavaScript/HTML/CSS lint, seven Node server tests and fourteen Chromium browser tests. It additionally verified the published storefront, guide, approved meaning, image assets, mobile lotus, thread and demo bag.
 
 The original comparison notes report render inspection at 1440px and 390px, plus width and automated axe checks at 320px. The current [study tests](../../tests/browser/explorations.spec.js) check both directions at 1440px, 390px and 320px, exercise the demo bag and native keyboard size controls, and assert matching product/content. These are automated observations, not learner observations or proof of complete accessibility.
 

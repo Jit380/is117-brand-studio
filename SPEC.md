@@ -68,7 +68,7 @@ Required size selection is validation, not a consistency application. No scarcit
 
 ## Actual checks and improvement evidence
 
-The [latest meaning publication run](https://github.com/Jit380/is117-brand-studio/actions/runs/41474503263) passed the standard npm run check command and verified the live storefront, guide, approved wording, images, mobile lotus, continuous thread and demo bag.
+The [recorded meaning publication run](https://github.com/Jit380/is117-brand-studio/actions/runs/41474503263) passed the standard npm run check command and verified the live storefront, guide, approved wording, images, mobile lotus, continuous thread and demo bag.
 
 - Formatting and HTML/CSS/JavaScript lint passed.
 - Seven Node server tests and fourteen Chromium browser tests passed.
@@ -93,6 +93,12 @@ This is specific visual feedback and a resulting revision. The device and browse
 | BRAND-001        | [Storefront](public/index.html), [guide](public/styleguide.html), [studies and references](docs/explorations/eko.md), [browser checks](tests/browser/studio.spec.js), [study checks](tests/browser/explorations.spec.js) | [Issue 2](https://github.com/Jit380/is117-brand-studio/issues/2), related [Issue 1](https://github.com/Jit380/is117-brand-studio/issues/1); both open when checked. No PR found in the repository |
 | LOTUS-001        | [Lotus and shared styles](public/eko-editorial.css), [continuous thread](public/eko-thread.js), [resize/control check](tests/browser/thread.spec.js)                                                                     | Learner feedback above; revision 9064578                                                                                                                                                          |
 | Approved meaning | [Storefront](public/index.html#meaning), [guide direction](public/styleguide.html#direction), credited Sade reference                                                                                                    | [Release 09a5946](https://github.com/Jit380/is117-brand-studio/commit/09a59467c1cd59e22a3ca2bfeee96d9ed3639d00) and linked publication run                                                        |
+
+## Scroll-following thread
+
+The decorative thread now uses a faint full route, a scroll-linked purple trace and a small glowing tip. Cached section checkpoints keep progress ordered through the curved route. It reverses with upward scrolling and completes at the footer; geometry updates after resizing, font loading, pause changes and bag-related height changes. Scroll events schedule a single paint frame rather than a continuous idle loop.
+
+System reduced-motion preferences start with the full static thread. The existing Pause / Resume control applies to the close-ups and thread, including an explicit opt-in to resume motion. The overlay ignores pointer events. [Thread behavior checks](tests/browser/thread.spec.js) cover forward/backward tracing, a visible reading marker, phone/footer completion, pause, reduced motion, resizing and usable demo-bag controls. This is implementation evidence, not a learner browser observation. Local formatting and lint, seven Node server tests and sixteen Chromium browser tests passed for this animation update.
 
 ## Hosting and handoff
 
