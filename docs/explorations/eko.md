@@ -1,8 +1,8 @@
 # EKO — two comparable design studies
 
-Open `public/explorations/index.html` through the repository's documented development server. The neutral storefront remains unchanged. These are viewable proposals for choosing a direction, not a completed BRAND-001 or a deployed commerce service.
+These are the two original comparable hero studies, preserved alongside the later EKO storefront. [View both studies](https://jit380.github.io/is117-brand-studio/explorations/index.html) or the [current storefront](https://jit380.github.io/is117-brand-studio/). Brand decisions and current evidence are reconciled in [SPEC.md](../../SPEC.md).
 
-Both versions share one AI-generated white-shirt visualization, headline, supporting text, deeper story, meaning section, size choices, and functioning temporary demo bag. There are no garment specifications, price, checkout, payments, customer testimonials, or inventory claims.
+Both studies share one AI-generated white-shirt visualization, headline, supporting text, story, meaning section, size choices and temporary demo bag. They do not supply garment specifications, prices, checkout, payments, testimonials or inventory claims.
 
 ## 01 — The quiet structure / modernist interpretation
 
@@ -24,20 +24,20 @@ Reference: [Syne for Synesthésie, Bonjour Monde and Lucas Descroix, 2017; open-
 
 Intended effect: a quiet surface with emotional depth and a more expressive visual identity. Risk: the type treatment could distract from the product. Apple is the user's requested inspiration; its current website was blocked by network policy, so no exact Apple page or current rendering is claimed as inspected. This is an interpretation using quotation and juxtaposition, not a claim that minimalism by itself is postmodern.
 
-## Current validation
+## Validation and evidence
 
-- Formatting and JavaScript, HTML and CSS lint pass.
-- Seven existing server tests and thirteen browser tests pass with system Chromium 154.0.8037.57 through a temporary Playwright executable override. The installed browser differs from the locked Playwright download revision; the repository's default config and CI browser installation remain unchanged.
-- Both directions were rendered and inspected at 1440px and 390px; width checks and automated axe scans also ran at 320px. The separate review found no WCAG 2 A/AA or 2.1 AA axe violations at those widths. This does not prove complete accessibility.
-- Checks exercise missing-size feedback, valid additions, clearing the bag and native keyboard size controls, and compare product/content equality between the two directions.
-- Intended fonts and image loading were verified. Desktop thumbnails in the gallery are actual browser screenshots from this code.
+The [current publication run](https://github.com/Jit380/is117-brand-studio/actions/runs/41474503263) passed formatting, JavaScript/HTML/CSS lint, seven Node server tests and fourteen Chromium browser tests. It additionally verified the published storefront, guide, approved meaning, image assets, mobile lotus, thread and demo bag.
 
-No learner preference between the two actual renders or learner browser observation is claimed. The provisional wordmark, prose and voice are reviewable AI proposals. The archetype, complete three-trait voice, secondary audience and ethical persuasion applications are not finalized. No conversation excerpts are included in the publication commit; LEARNING.md changes remain local and unreviewed.
+The original comparison notes report render inspection at 1440px and 390px, plus width and automated axe checks at 320px. The current [study tests](../../tests/browser/explorations.spec.js) check both directions at 1440px, 390px and 320px, exercise the demo bag and native keyboard size controls, and assert matching product/content. These are automated observations, not learner observations or proof of complete accessibility.
 
-## Publication
+The original implementation notes record that the intended fonts, loaded images and gallery thumbnails were checked from the actual renders. The learner later supplied the three-panel reference and requested the lotus, closer text placement and continuous thread for the storefront. That later work does not alter the identical-content comparison preserved here.
 
-The first `Publish EKO previews` run passed its checks but failed at Pages configuration: the site does not exist and GitHub's integration cannot enable it (`Resource not accessible by integration`). No live deployment is claimed.
+See [LEARNING.md](../../LEARNING.md) for the short learner/AI evidence distinction. Earlier personal reasoning and keyboard/mobile observations may exist in the separate setup chat; this document does not invent them.
 
-The corrected workflow always saves a downloadable artifact and explicitly skips live publication until Pages is configured for GitHub Actions. Once enabled in repository settings, rerun the workflow on the feature branch. It publishes the full `public/` folder so the original baseline stays at the root and both previews remain under `/explorations/`, then verifies both published URLs. Only a successful deployment and those checks establish that a live link works.
+## Publication and archive
 
-The complete, self-contained website bundle is `public/explorations/EKO-previews.zip`. Unzip it and open `EKO/index.html`; each direction includes its fonts, image, styles and working bag. The standalone content and interaction were also checked through a local HTTP server with external requests blocked. Browser policy prevents direct `file://` inspection in this cloud machine, so no local-file browser check is claimed.
+GitHub Pages now serves the current storefront at https://jit380.github.io/is117-brand-studio/ and both studies under /explorations/. Publication and live verification succeeded in the linked run. The neutral root and initial Pages setup notes are historical.
+
+The sole publishing source is feature/brand-001-first-branded-storefront. [Deployment instructions](../deployment.md) document automatic updates, the public URL and manual republishing. The host serves public/ independently of any local development terminal.
+
+The archived public/explorations/EKO-previews.zip contains the original self-contained comparison pair, including its fonts, imagery, styles and bag. Use the current publishing branch for the latest storefront. Earlier implementation notes report local HTTP checks with external requests blocked; direct file:// inspection was unavailable in that environment.

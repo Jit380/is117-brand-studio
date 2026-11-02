@@ -1,115 +1,101 @@
-# Brand Studio decisions
+# EKO — brand decisions and evidence
 
-This is the durable agreement between the learner and agent. Keep it concise and update it only with agreed choices or actual evidence. `Not chosen yet` is a valid status. Persona cards are hypotheses unless supported by real research.
+This record separates learner choices, the supplied project identity, AI assistance and verified artifacts. [LEARNING.md](LEARNING.md) contains the short conversation summary reviewed by the learner. Earlier answers reported in the “Set up IS117 brand-studio” chat are unavailable here; that is a context gap.
 
-[LEARNING.md](LEARNING.md) holds the short, reviewable record of learner explanations and help received. Keep the brand decisions and implementation evidence here; link rather than duplicate them.
+## Current state
 
-## Current stage
+- Website and live guide: published and verified.
+- Feature: BRAND-001 — first branded storefront and live style guide.
+- Source branch: feature/brand-001-first-branded-storefront. Publishing does not imply that the storefront was merged into main or that every learning criterion is complete.
+- Record status: reconciled summary reviewed for accuracy/removals and publication authorized on 2026-11-02; earlier-chat context gaps remain explicit.
+- Scope: the same entirely white T-shirt, a temporary demo bag, two preserved design studies and a shared identity. No orders, payments, accounts, persistence or unsupported product specifications.
 
-- Stage: EKO reference-based storefront implemented; publication authorized.
-- Current feature: `BRAND-001` — first branded storefront and live style guide.
-- Status: Release prepared on `feature/brand-001-first-branded-storefront`; deployment verification runs in GitHub Actions.
-- Next small decision: Review the deployed EKO storefront; missing learner reasoning and human observations remain pending.
-
-## Product boundary
-
-The product is the same white T-shirt throughout the comparison. The baseline offers a size selector and temporary demo bag. No real orders, payment, accounts, or persistence. Keep product facts stable between directions; do not add unsupported claims about materials, manufacturing, sustainability, fit, delivery, scarcity, reviews, or sales.
+[Storefront](https://jit380.github.io/is117-brand-studio/) · [Live guide](https://jit380.github.io/is117-brand-studio/styleguide.html) · [Design studies](https://jit380.github.io/is117-brand-studio/explorations/index.html)
 
 ## Audience hypotheses
 
-The primary need guides the page. Give the secondary card one contrasting need to check that same page; keep both cards brief.
+The learner identified teens and college students as the primary focus, with a welcome to everyone. This is a design choice, not customer research.
 
-| Tiny card                             | Primary audience          | Secondary audience        |
-| ------------------------------------- | ------------------------- | ------------------------- |
-| Person in a concrete situation        | Not chosen yet            | Not chosen yet            |
-| Goal or meaning they seek             | Not chosen yet            | Not chosen yet            |
-| Concern before choosing               | Not chosen yet            | Not chosen yet            |
-| What the page should help them decide | Not chosen yet            | Not chosen yet            |
-| Evidence or assumption                | Assumption; not validated | Assumption; not validated |
+| Tiny card                        | Primary audience                                                                                             | Broader audience                                                                                   |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| Person / situation               | Teens and college students; an earlier situation explanation is unavailable here                             | Everyone is welcome; a contrasting secondary persona is not recoverable from the available records |
+| Intended brand meaning           | Quiet strength, dignity and unseen struggles; lotus symbolism adds purity, potential and spiritual awakening | The same inclusive meaning                                                                         |
+| Visitor need or concern          | Earlier setup explanation unavailable; no demographic assumption is substituted                              | Earlier setup explanation unavailable                                                              |
+| What the page currently supports | Understanding EKO's meaning, viewing the concept and trying demo size selection                              | The same page and controls                                                                         |
+| Evidence                         | Learner's audience statement in this chat; no customer validation claimed                                    | Learner's broader welcome; no customer validation claimed                                          |
 
-## Early brand brief
+## Brand brief and provenance
 
-| Decision                                 | Agreement      |
-| ---------------------------------------- | -------------- |
-| Brand name                               | Not chosen yet |
-| One-sentence promise                     | Not chosen yet |
-| Primary archetype: the brand's character | Not chosen yet |
-| Three voice traits                       | Not chosen yet |
-| One example line in this voice           | Not chosen yet |
-| Learner's predicted audience effect      | Not chosen yet |
+| Decision                  | Current agreement or source                                                                                                                                                       |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name                      | EKO — supplied storefront and subsequent learner requests                                                                                                                         |
+| Promise                   | “A simple shirt that stands for the strength you carry.” — supplied guide                                                                                                         |
+| Core meaning              | “EKO honors the quiet strength people carry, the struggles others don’t see, and the dignity everyone deserves.” — AI wording explicitly approved by the learner                  |
+| Archetype                 | Lover — supplied guide: emotional depth, tenderness and human connection                                                                                                          |
+| Voice                     | Personal, sincere and understated — supplied guide                                                                                                                                |
+| Example line              | “For all you carry.” — supplied site and both design studies                                                                                                                      |
+| Lotus reason              | Learner explained purity, potential and spiritual awakening; this is EKO's intended symbolism                                                                                     |
+| Emotional reference       | Learner chose Sade's “Pearls” and named the chest-covering pose on the cover. The song appears on Love Deluxe; [official source](https://www.sade.com/lyrics/pearls)              |
+| Interpretation assistance | AI supplied the reading of vulnerability, self-protection, compassion, dignity and quiet strength, then drafted the approved meaning. Artist intent for the cover is not asserted |
+| Predicted visitor effect  | The learner reports earlier setup answers; their exact explanation is unavailable here. Approval is not converted into an independent prediction                                  |
 
-## Visual decision
+## Visual identity and references
 
-Compare two small hero previews before building the whole page. Hold the product, headline, supporting copy, and action identical. Use specific real design references and annotate visual choices, intended effect, and risk.
+| Item                            | Actual artifact / evidence                                                                                                                                                                                                                                 |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Shared comparison content       | Both studies use “A simple shirt. / For all you carry.”, “Quiet strength. Worn every day.” and “Discover the shirt”, the same product image and matching story/action content                                                                              |
+| Modernist study                 | [Preview](public/explorations/modernist.html); [annotations and IBM Plex reference](docs/explorations/eko.md). Grid, hierarchy and measured typography; intended effect and risk are recorded                                                              |
+| Postmodern study                | [Preview](public/explorations/postmodern.html); [annotations and Syne reference](docs/explorations/eko.md). Large lettering and mixed typographic voices; intended effect and risk are recorded                                                            |
+| Current direction               | Learner supplied the three-panel visual reference and requested sculptural white fabric, dramatic lighting, expressive type and a longer story; later requested the overhead white lotus and continuous purple thread                                      |
+| SVG wordmark                    | [EKO SVG](public/assets/eko-wordmark.svg), a simple custom wordmark supplied with the latest EKO files; no trademark clearance claimed                                                                                                                     |
+| Small / one-color presentations | [Guide logo board](public/styleguide.html#logo): large, navigation-size and reversed one-color artwork. [Storefront](public/index.html) uses the same SVG                                                                                                  |
+| Logo review                     | AI rendered and inspected the implemented pages during development. A separate learner explanation of the logo at use size is unavailable in this record                                                                                                   |
+| Shared system                   | [Shared CSS](public/eko-shared.css), [identity refinements](public/eko-finish.css), [editorial styles](public/eko-editorial.css) and [guide](public/styleguide.html): paper/ink/lavender roles, Georgia display type, Plex body type and common components |
+| Imagery and truthfulness        | Shirt, fabric, quilt and lotus visuals are labeled concept / AI-generated imagery. The quilt has a [National AIDS Memorial source](https://www.aidsmemorial.org/quilt); no endorsement or product-construction evidence is implied                         |
 
-A simple original SVG wordmark is enough. Show small-size and one-color presentations; they may use the same asset when it works.
+The existing reference notes describe the primary typeface documentation and specimens inspected during the original comparison. They are preserved with that provenance. Today's record reconciliation is not a new claim of viewing those specimens.
 
-| Item                                              | Agreement or evidence |
-| ------------------------------------------------- | --------------------- |
-| Shared headline / support / action                | Not chosen yet        |
-| Modernist preview, reference, and annotations     | Not chosen yet        |
-| Postmodernist preview, reference, and annotations | Not chosen yet        |
-| Chosen direction and reason                       | Not chosen yet        |
-| Original SVG logo                                 | Not chosen yet        |
-| Monochrome and small-size variants                | Not chosen yet        |
-| Logo review at actual use size                    | Not checked yet       |
-| Shared palette, typography, spacing, and assets   | Not chosen yet        |
+## Ethical persuasion — AI mappings of existing elements
 
-## Ethical persuasion
+These interpretations map two existing, truthful elements to Cialdini principles. They are not presented as previously documented learner choices, independent learner reasoning or measured conversion improvements. They are conceptually related; the learner's earlier mechanism/benefit explanation is unavailable.
 
-Choose two applications that help the visitor make a voluntary, informed decision. Record their real implementation and mechanism rather than a principle name alone. Required size selection or validation alone does not establish consistency. Do not invent social proof, scarcity, authority, or product facts.
+| Principle               | Visible element                                                                                                                               | Mechanism and intended visitor benefit                                                                                                                                                |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Liking / shared values  | The approved quiet-strength and dignity statement in [the meaning chapter](public/index.html#meaning), expressed in a personal, sincere voice | An empathetic tone and recognizable values may help visitors judge whether EKO expresses something they identify with. This is intended affinity, not fabricated personal familiarity |
+| Unity / shared identity | The inclusive “Not everything we carry can be seen” story, the continuous thread and individual stories joining in the remembrance chapter    | A shared-humanity identity offers an inclusive meaning without required membership or pressure. The historical source supports the history, not an endorsement of EKO                 |
 
-| Principle      | Actual copy or interaction | Visitor benefit / factual support |
-| -------------- | -------------------------- | --------------------------------- |
-| Not chosen yet | Not chosen yet             | Not chosen yet                    |
-| Not chosen yet | Not chosen yet             | Not chosen yet                    |
+Required size selection is validation, not a consistency application. No scarcity, testimonials, sales counts, charitable donations, credentials or product authority are invented.
 
-## BRAND-001 — first branded storefront and live style guide
+## Actual checks and improvement evidence
 
-**Scope:** turn the working neutral storefront into the chosen brand's first coherent page. Keep the existing size selector and demo bag usable. Do not add checkout or all future features.
+The [latest meaning publication run](https://github.com/Jit380/is117-brand-studio/actions/runs/41474503263) passed the standard npm run check command and verified the live storefront, guide, approved wording, images, mobile lotus, continuous thread and demo bag.
 
-Keep when:
+- Formatting and HTML/CSS/JavaScript lint passed.
+- Seven Node server tests and fourteen Chromium browser tests passed.
+- Browser coverage includes missing/valid size input, adding/emptying, native keyboard size controls, skip navigation, image/link integrity, automated axe checks, narrow widths, matching study content and thread resizing.
+- Earlier local runs used system Chromium through a temporary configuration because the locked browser download was blocked. The linked GitHub run used the repository's standard browser installation.
+- Passing axe checks are limited automated observations, not proof of complete accessibility, brand fit or customer demand.
 
-- The learner has chosen the audience hypotheses, brief, visual direction, and logo; the page visibly expresses those choices.
-- Two annotated hero directions compare modernist/postmodernist thinking with the same content and real source links.
-- The selected SVG logo works at small size and in one color; the presentations may share one asset.
-- The storefront and live style guide share CSS variables, typography, components, and assets; they do not drift into separate identities.
-- Two ethical persuasion applications are visible and their claims are supportable.
-- Prepared checks pass, the agent has reviewed the slice and discussed one actual check, and the learner has reported a browser impression plus keyboard/mobile observations.
-- The issue, branch, commit, and PR explain this feature in the learner's repository; agreed decisions and actual evidence are saved here. The learner has approved keeping and merging the change, and the merge into `main` is verified. Publishing is a separate choice.
+### One actual check — AI explanation
 
-## Evidence
+[Missing-size browser case](tests/browser/studio.spec.js): submit “Add to demo bag” with no selected size. Assertions: explanatory feedback is visible and the bag count remains 0. Result: passed in the linked run. It checks that invalid input cannot add an item silently. This interpretation is supplied by AI; the learner's earlier test explanation is unavailable.
 
-Write a short result and link only evidence that exists. A passing browser check is evidence for its assertions, not customer research or proof of full accessibility.
+### Learner feedback and resulting revision
 
-| Spec ID   | Files           | Issue / PR      | Actual checks and observations            |
-| --------- | --------------- | --------------- | ----------------------------------------- |
-| BRAND-001 | Not changed yet | Not created yet | Not run yet; learner observations pending |
+Labeled paraphrase of this chat: the learner reported that the lotus was too big, asked for text beside it, and wanted the purple thread throughout the website, including the lotus. [Revision 9064578](https://github.com/Jit380/is117-brand-studio/commit/90645787c66ec4b17888f3abc88b77e4075c5e2e) reduced the image/chapter, aligned the text and connected one responsive decorative thread through to the footer.
 
-## Later
+This is specific visual feedback and a resulting revision. The device and browser mode were not stated. Separate learner keyboard/narrow-view observations and an explicit test interpretation may exist in the earlier setup chat; they are not fabricated here.
 
-No follow-up is selected. After keeping `BRAND-001`, choose one next cycle: perhaps a brand story, a supported fit guide, or richer demo-bag behavior. Agree its scope and add one new spec ID at that time.
+## Evidence map
 
-## EKO storefront release
+| Spec ID          | Files / checks                                                                                                                                                                                                           | Repository record                                                                                                                                                                                 |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BRAND-001        | [Storefront](public/index.html), [guide](public/styleguide.html), [studies and references](docs/explorations/eko.md), [browser checks](tests/browser/studio.spec.js), [study checks](tests/browser/explorations.spec.js) | [Issue 2](https://github.com/Jit380/is117-brand-studio/issues/2), related [Issue 1](https://github.com/Jit380/is117-brand-studio/issues/1); both open when checked. No PR found in the repository |
+| LOTUS-001        | [Lotus and shared styles](public/eko-editorial.css), [continuous thread](public/eko-thread.js), [resize/control check](tests/browser/thread.spec.js)                                                                     | Learner feedback above; revision 9064578                                                                                                                                                          |
+| Approved meaning | [Storefront](public/index.html#meaning), [guide direction](public/styleguide.html#direction), credited Sade reference                                                                                                    | [Release 09a5946](https://github.com/Jit380/is117-brand-studio/commit/09a59467c1cd59e22a3ca2bfeee96d9ed3639d00) and linked publication run                                                        |
 
-The release presents a centered entirely white shirt, sculptural white fabric on charcoal, and an original conceptual ivory/lavender quilt illustration. Large serif typography and a fine decorative lavender thread connect the three chapters; narrow screens stack them. Product concept imagery is AI-generated, not evidence of product construction or an archival quilt. The existing size selector and temporary demo bag are preserved. The live guide shares the CSS and assets.
+## Hosting and handoff
 
-Changed files include `public/index.html`, `public/styleguide.html`, shared `public/eko-*.css` and JavaScript, and `public/assets/eko-*.png` / `eko-wordmark.svg`. Existing exploration pages, their source notes and tests are preserved. No unreviewed LEARNING.md excerpts, local screenshots, scripts, caches or dependencies are part of this release.
+The site is static HTML/CSS/browser JavaScript under public/. GitHub Pages serves it independently of the local Node preview server. The public repository uses free Pages hosting; the EKO feature branch is the sole publisher and main runs checks only. [Exact publishing commands and settings](docs/deployment.md).
 
-Validation before publication: formatting, HTML/CSS/JavaScript lint, seven server tests, and the full browser suite using system Chromium. The GitHub workflow uses its standard Playwright Chromium installation and additionally verifies the deployed root, three new image assets, shared style guide and demo-bag operations. Human impressions, audience reasoning and other learning criteria are not inferred from these checks. Publication is separate from completion of all BRAND-001 learning evidence.
-
-## LOTUS-001 — full-width Why white chapter
-
-Replaces the abstract sphere in `#meaning` with an overhead white lotus in pond water and green lily pads. The photograph fills the whole section; copy overlays a dark gradient. A dedicated portrait image keeps the lotus above the text on narrow screens. Both images are AI-generated botanical mood studies. The shirt and demo bag are unchanged, and the guide documents the matching imagery and layout.
-
-Files: `public/index.html`, `public/eko-editorial.css`, `public/styleguide.html`, `public/assets/eko-lotus.png`, `public/assets/eko-lotus-mobile.png`. The existing deployment verification additionally loads the mobile lotus asset and checks the section fills the viewport width.
-
-### Lotus scale and continuous thread
-
-The lotus and chapter height are reduced; desktop copy sits immediately beside the flower. On phones the smaller flower and headline share a row, followed by body text. One decorative SVG thread now follows the full storefront through the opening, close-up, lotus, product and footer. It uses the guide’s shared thread-color token, ignores pointer events, and has no animation. Its route adjusts to responsive wrapping, motion controls and bag-related height changes.
-
-`public/eko-thread.js` supplies the continuous route; `tests/browser/thread.spec.js` verifies that it still passes through the lotus and ends in the footer after motion and viewport changes, while the bag remains usable. Formatting, lint, 7 server tests and all 14 browser tests passed with system Chromium. GitHub Actions additionally checks the deployed thread after mobile resizing. Human observations remain separate from these checks.
-
-## Hosting configuration
-
-The site is static HTML/CSS/browser JavaScript; it requires no production backend or build step. GitHub Pages hosts `public/` independently of the local Node preview server. The public repository uses free Pages hosting. The EKO feature branch is the sole publishing source, and the separate main/PR workflow runs checks only. Exact push commands, Pages settings and the stable URL are documented in `docs/deployment.md`. No main-branch content merge or completion of learner evidence is implied by this infrastructure maintenance.
+The learner reviewed the short LEARNING.md summary for accuracy/removals before publication. Preserve the provenance and context gaps above; reuse earlier answers if that record becomes available and review later excerpt changes before publishing. No rubric score, personal keyboard/mobile observations, main-branch storefront merge or completed learning criterion is inferred from publication alone.

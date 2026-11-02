@@ -4,6 +4,8 @@
 
 [Storefront](https://jit380.github.io/is117-brand-studio/) · [Live style guide](https://jit380.github.io/is117-brand-studio/styleguide.html)
 
+Project review: [decisions and artifact evidence](SPEC.md) · [reviewed learning summary](LEARNING.md).
+
 **Always-online hosting:** GitHub Pages serves this static HTML/CSS/JavaScript site independently of your computer. No production backend is required. Hosting is free for this public repository.
 
 Push website changes to `feature/brand-001-first-branded-storefront` to publish automatically through **Publish EKO website**. `main` runs checks only. [Exact update commands, Pages settings and manual publishing steps](docs/deployment.md). Brand reasoning and human browser observations remain separate from automated checks.
@@ -60,7 +62,7 @@ You work at your own pace. There is no required class demonstration, quiz, separ
 
 | File                                   | Purpose                                                                                                    |
 | -------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| `public/index.html`                    | Working storefront; the first branding feature is still pending                                            |
+| `public/index.html`                    | Published EKO storefront with a working temporary demo bag                                                 |
 | `public/styleguide.html`               | Live identity board using the storefront's shared styles and assets                                        |
 | `public/studio.html`                   | Short studio overview, also [available online](https://kaw393939.github.io/is117-brand-studio/studio.html) |
 | [SPEC.md](SPEC.md)                     | The concise record of your chosen decisions and evidence                                                   |
