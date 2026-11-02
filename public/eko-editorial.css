@@ -700,3 +700,19 @@ body.eko-final {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+.lotus-copy > p.eko-story-line,
+.eko-guide-section p.eko-story-line {
+  font-family: var(--font-display);
+  font-size: clamp(19px, 1.5vw, 22px);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.lotus-copy > p.eko-story-line {
+  color: var(--color-accent);
+}
+
+.eko-guide-section p.eko-story-line {
+  color: var(--color-display-accent);
+}

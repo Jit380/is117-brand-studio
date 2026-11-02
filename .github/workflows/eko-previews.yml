@@ -81,6 +81,9 @@ jobs:
               const meaningCopy = (await page.locator(meaningSection).innerText()).replace(/\s+/g, ' ');
               assert.ok(meaningCopy.includes('EKO honors the quiet strength people carry'));
               console.log('Verified approved EKO meaning on the deployed page.');
+              const story = page.locator('.eko-story-line');
+              assert.match((await story.innerText()).replace(/\s+/g, ' '), /The compassion in Sade/);
+              console.log('Verified Sade-inspired story passage; text color:', await story.evaluate(element => getComputedStyle(element).color));
               if (!route) {
                 assert.match(await page.locator('h1').textContent(), /A simple shirt/);
                 for (const name of ['eko-shirt-editorial.png', 'eko-knot.png', 'eko-quilt.png', 'eko-lotus.png']) {
