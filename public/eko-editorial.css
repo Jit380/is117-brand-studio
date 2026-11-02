@@ -695,3 +695,8 @@ body.eko-final {
     font-size: 9px;
   }
 }
+
+.eko-guide-section p .text-link {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

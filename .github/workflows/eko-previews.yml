@@ -77,6 +77,10 @@ jobs:
               assert.equal(response.status(), 200);
               await page.locator('img').evaluateAll(images => images.forEach(image => image.loading = 'eager'));
               await page.locator('img').evaluateAll(images => Promise.all(images.map(image => image.decode())));
+              const meaningSection = route ? '#direction' : '#meaning';
+              const meaningCopy = (await page.locator(meaningSection).innerText()).replace(/\s+/g, ' ');
+              assert.ok(meaningCopy.includes('EKO honors the quiet strength people carry'));
+              console.log('Verified approved EKO meaning on the deployed page.');
               if (!route) {
                 assert.match(await page.locator('h1').textContent(), /A simple shirt/);
                 for (const name of ['eko-shirt-editorial.png', 'eko-knot.png', 'eko-quilt.png', 'eko-lotus.png']) {
