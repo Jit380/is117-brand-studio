@@ -20,9 +20,17 @@ The learner identified teens and college students as the primary focus, with a w
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
 | Person / situation               | Teens and college students; an earlier situation explanation is unavailable here                             | Everyone is welcome; a contrasting secondary persona is not recoverable from the available records |
 | Intended brand meaning           | Quiet strength, dignity and unseen struggles; lotus symbolism adds purity, potential and spiritual awakening | The same inclusive meaning                                                                         |
-| Visitor need or concern          | Earlier setup explanation unavailable; no demographic assumption is substituted                              | Earlier setup explanation unavailable                                                              |
+| Visitor need or concern          | Wanting to feel understood and express themselves; adopted and explained in the 2026-11-05 follow-up (see below)                              | Earlier setup explanation unavailable                                                              |
 | What the page currently supports | Understanding EKO's meaning, viewing the concept and trying demo size selection                              | The same page and controls                                                                         |
 | Evidence                         | Learner's audience statement in this chat; no customer validation claimed                                    | Learner's broader welcome; no customer validation claimed                                          |
+
+### Later audience-to-design explanation — 2026-11-05
+
+AI-drafted wording shown to the learner, who requested that it be added to GitHub:
+
+> My audience is teens and college students who want to feel understood and express themselves. I chose EKO’s message of quiet strength to recognize the human spirit of continuing, even when life gets difficult. “Not everything we carry can be seen” connects that meaning to the website: it acknowledges struggles others may not notice and may help visitors feel seen and connected to the brand.
+
+Assistance and provenance: AI first suggested feeling understood and self-expression as a possible audience need. The learner confirmed that connection and added their own reason: the human spirit of moving forward no matter how hard life gets, and the burdens that others cannot see. AI then organized that explanation into the paragraph above. This later explanation supplements the earlier record; it does not claim customer research or recover the unavailable setup conversation.
 
 ## Brand brief and provenance
 
@@ -37,7 +45,7 @@ The learner identified teens and college students as the primary focus, with a w
 | Lotus reason              | Learner explained purity, potential and spiritual awakening; this is EKO's intended symbolism                                                                                     |
 | Emotional reference       | Learner chose Sade's “Pearls” and named the chest-covering pose on the cover. The song appears on Love Deluxe; [official source](https://www.sade.com/lyrics/pearls)              |
 | Interpretation assistance | AI supplied the reading of vulnerability, self-protection, compassion, dignity and quiet strength, then drafted the approved meaning. Artist intent for the cover is not asserted |
-| Predicted visitor effect  | The learner reports earlier setup answers; their exact explanation is unavailable here. Approval is not converted into an independent prediction                                  |
+| Predicted visitor effect  | Later assisted explanation (2026-11-05): the visible message about unseen struggles may help visitors feel understood and connected; this is an intended effect, not a measured result or a pre-build prediction                                  |
 
 ## Visual identity and references
 
