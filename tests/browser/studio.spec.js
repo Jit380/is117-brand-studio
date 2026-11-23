@@ -132,3 +132,45 @@ for (const route of ["/", "/styleguide.html", "/studio.html"]) {
     await expect(page.getByRole("main")).toBeVisible();
   });
 }
+
+for (const width of [320, 375, 768, 1280]) {
+  test(`storefront navigation and demo size journey at ${width}px`, async ({
+    page,
+  }) => {
+    await page.setViewportSize({ width, height: 812 });
+    await page.emulateMedia({ reducedMotion: "reduce" });
+    await page.goto("/");
+    await page.evaluate(() => document.fonts.ready);
+    const nav = page.getByRole("navigation", { name: "Main navigation" });
+    for (const name of ["The meaning", "The shirt"]) {
+      const link = nav.getByRole("link", { name, exact: true });
+      await expect(link).toBeInViewport({ ratio: 1 });
+      await link.click({ trial: true });
+    }
+    expect(
+      await page.evaluate(() => document.documentElement.scrollWidth),
+    ).toBeLessThanOrEqual(width);
+    await page.keyboard.press("Tab");
+    await page.keyboard.press("Tab");
+    await page.keyboard.press("Tab");
+    const meaning = nav.getByRole("link", { name: "The meaning" });
+    await expect(meaning).toBeFocused();
+    await expect(meaning).toHaveCSS("outline-style", "solid");
+    await page.keyboard.press("Tab");
+    await page.keyboard.press("Enter");
+    await expect(page).toHaveURL(/#shirt$/);
+    const group = page.getByRole("group", { name: "Choose your demo size" });
+    await expect(group).toHaveAccessibleDescription(
+      /Garment measurements are unavailable/,
+    );
+    await page.getByRole("button", { name: "Add to demo bag" }).click();
+    const small = group.getByRole("radio", { name: "S", exact: true });
+    await expect(small).toBeFocused();
+    await expect(small).toHaveAccessibleDescription(/Choose a size/);
+    await page.keyboard.press("ArrowRight");
+    await page.keyboard.press("Tab");
+    await page.keyboard.press("Enter");
+    await expect(page.locator("#bag-status")).toContainText("size M");
+    await expect(page.locator("#bag-count")).toHaveText("1");
+  });
+}
