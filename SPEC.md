@@ -16,13 +16,13 @@ This record separates learner choices, the supplied project identity, AI assista
 
 The learner identified teens and college students as the primary focus, with a welcome to everyone. This is a design choice, not customer research.
 
-| Tiny card                        | Primary audience                                                                                             | Broader audience                                                                                   |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
-| Person / situation               | Teens and college students; an earlier situation explanation is unavailable here                             | Everyone is welcome; a contrasting secondary persona is not recoverable from the available records |
-| Intended brand meaning           | Quiet strength, dignity and unseen struggles; lotus symbolism adds purity, potential and spiritual awakening | The same inclusive meaning                                                                         |
-| Visitor need or concern          | Wanting to feel understood and express themselves; adopted and explained in the 2026-11-05 follow-up (see below)                              | Earlier setup explanation unavailable                                                              |
-| What the page currently supports | Understanding EKO's meaning, viewing the concept and trying demo size selection                              | The same page and controls                                                                         |
-| Evidence                         | Learner's audience statement in this chat; no customer validation claimed                                    | Learner's broader welcome; no customer validation claimed                                          |
+| Tiny card                        | Primary audience                                                                                                 | Broader audience                                                                                   |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Person / situation               | Teens and college students; an earlier situation explanation is unavailable here                                 | Everyone is welcome; a contrasting secondary persona is not recoverable from the available records |
+| Intended brand meaning           | Quiet strength, dignity and unseen struggles; lotus symbolism adds purity, potential and spiritual awakening     | The same inclusive meaning                                                                         |
+| Visitor need or concern          | Wanting to feel understood and express themselves; adopted and explained in the 2026-11-05 follow-up (see below) | Earlier setup explanation unavailable                                                              |
+| What the page currently supports | Understanding EKO's meaning, viewing the concept and trying demo size selection                                  | The same page and controls                                                                         |
+| Evidence                         | Learner's audience statement in this chat; no customer validation claimed                                        | Learner's broader welcome; no customer validation claimed                                          |
 
 ### Later audience-to-design explanation — 2026-11-05
 
@@ -45,7 +45,7 @@ Assistance and provenance: AI first suggested feeling understood and self-expres
 | Lotus reason              | Learner explained purity, potential and spiritual awakening; this is EKO's intended symbolism                                                                                                                                                                                  |
 | Emotional reference       | Learner chose Sade's “Pearls” and named the chest-covering pose on the cover. The reference is expressed on the storefront in lavender italic story type, with a matching guide sample. The song appears on Love Deluxe; [official source](https://www.sade.com/lyrics/pearls) |
 | Interpretation assistance | AI supplied the reading of vulnerability, self-protection, compassion, dignity and quiet strength, then drafted the approved meaning. Artist intent for the cover is not asserted                                                                                              |
-| Predicted visitor effect  | Later assisted explanation (2026-11-05): the visible message about unseen struggles may help visitors feel understood and connected; this is an intended effect, not a measured result or a pre-build prediction                                                                                                                               |
+| Predicted visitor effect  | Later assisted explanation (2026-11-05): the visible message about unseen struggles may help visitors feel understood and connected; this is an intended effect, not a measured result or a pre-build prediction                                                               |
 
 ## Visual identity and references
 
@@ -113,3 +113,9 @@ System reduced-motion preferences start with the full static thread. The existin
 The site is static HTML/CSS/browser JavaScript under public/. GitHub Pages serves it independently of the local Node preview server. The public repository uses free Pages hosting; the EKO feature branch is the sole publisher and main runs checks only. [Exact publishing commands and settings](docs/deployment.md).
 
 The learner reviewed the short LEARNING.md summary for accuracy/removals before publication. Preserve the provenance and context gaps above; reuse earlier answers if that record becomes available and review later excerpt changes before publishing. No rubric score, personal keyboard/mobile observations, main-branch storefront merge or completed learning criterion is inferred from publication alone.
+
+## Mobile navigation and demo sizing
+
+The mobile stylesheet hid the first header destination at 600px and below. The storefront header now wraps when necessary and exposes both “The meaning” and “The shirt.” The size group explains that garment measurements are unavailable. Missing-size feedback is associated with invalid controls until a choice is made.
+
+The [research decision](https://github.com/Jit380/white-shirt-research/issues/1) explains the competitor evidence and architecture trade-offs. The [implementation issue](https://github.com/Jit380/is117-brand-studio/issues/3) tracks engineering results and the outstanding classmate walkthrough. The four viewport checks in [studio.spec.js](tests/browser/studio.spec.js) exercise header access, horizontal overflow, size guidance and error recovery through adding a medium shirt.

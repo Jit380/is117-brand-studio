@@ -32,6 +32,7 @@
       sizeError.hidden = false;
       form.querySelectorAll('input[name="size"]').forEach((input) => {
         input.setAttribute("aria-invalid", "true");
+        input.setAttribute("aria-describedby", "size-error");
       });
       form.querySelector('input[name="size"]').focus();
       return;
@@ -48,6 +49,7 @@
     sizeError.hidden = true;
     form.querySelectorAll('input[name="size"]').forEach((input) => {
       input.removeAttribute("aria-invalid");
+      input.removeAttribute("aria-describedby");
     });
   });
 
