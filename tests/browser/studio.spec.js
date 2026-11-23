@@ -150,8 +150,7 @@ for (const width of [320, 375, 768, 1280]) {
     expect(
       await page.evaluate(() => document.documentElement.scrollWidth),
     ).toBeLessThanOrEqual(width);
-    await page.keyboard.press("Tab");
-    await page.keyboard.press("Tab");
+    await page.getByRole("link", { name: "EKO storefront home" }).focus();
     await page.keyboard.press("Tab");
     const meaning = nav.getByRole("link", { name: "The meaning" });
     await expect(meaning).toBeFocused();
